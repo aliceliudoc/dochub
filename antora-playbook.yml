@@ -10,7 +10,7 @@ content:
     branches: [master, v1.0, v2.0]
     edit_url: false
   - url: https://github.com/aliceliudoc/doc-web.git
-    branches: [main] 
+    branches: [main, v2.0] 
     edit_url: false
 asciidoc:
   attributes:

@@ -461,35 +461,47 @@ as the CoPilot service account.</p>
 <a href="https://docs.aviatrix.com/HowTos/copilot_getting_started.html#about-copilot-user-accounts">About
 CoPilot User Accounts</a>.</p>
 </div>
-<div class="paragraph">
-<p>+
-image::copilot_login_service_account.png[copilot_login_service_account]
-. When prompted for <strong>CoPilot Customer ID</strong>, enter your CoPilot license
+<div class="imageblock">
+<div class="content">
+<img src="_images/copilot_login_service_account.png" alt="copilot_login_service_account">
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>When prompted for <strong>CoPilot Customer ID</strong>, enter your CoPilot license
 key.</p>
+<div class="imageblock">
+<div class="content">
+<img src="_images/copilot_login_customer_id.png" alt="copilot_login_customer_id">
+</div>
 </div>
 <div class="paragraph">
-<p>+
-image::copilot_login_customer_id.png[copilot_login_customer_id]</p>
-</div>
-<div class="paragraph">
-<p>+
-<strong>TIP:</strong> Later, if you decide to terminate your instance of CoPilot and
+<p><strong>TIP:</strong> Later, if you decide to terminate your instance of CoPilot and
 deploy a new instance using the same license key, release the license of
-the current instance first by clicking <strong>RESET</strong> in Settings &gt; Licensing.
-. If a Data Disk Setup dialog does not appear, skip to step 8 to verify
-connectivity with your controller.
-. In Data Disk Setup, select the disk/volume you created for CoPilot
-storage and click START. When the process is complete, click FINISH.
-. (Verify connectivity with your controller) To verify Copilot has
+the current instance first by clicking <strong>RESET</strong> in Settings &gt; Licensing.</p>
+</div>
+</li>
+<li>
+<p>If a Data Disk Setup dialog does not appear, skip to step 8 to verify
+connectivity with your controller.</p>
+</li>
+<li>
+<p>In Data Disk Setup, select the disk/volume you created for CoPilot
+storage and click START. When the process is complete, click FINISH.</p>
+</li>
+<li>
+<p>(Verify connectivity with your controller) To verify Copilot has
 connected successfully to your controller, from the CoPilot dashboard,
 confirm that you can see the inventory of all resources across all
 clouds in your multi-cloud network that are managed by Aviatrix
 Controller. Confirm that the inventory tiles show the number and status
 of each of your managed resources and the global location of your
-managed VPCs/VPNs/VNETs are represented on the geographic map.
-. (For FlowIQ feature) To use the FlowIQ feature in CoPilot, ensure that
+managed VPCs/VPNs/VNETs are represented on the geographic map.</p>
+</li>
+<li>
+<p>(For FlowIQ feature) To use the FlowIQ feature in CoPilot, ensure that
 the controller is configured to forward NetFlow logs to CoPilot.</p>
-</div>
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
@@ -502,12 +514,18 @@ the controller is configured to forward NetFlow logs to CoPilot.</p>
 <p>Use the static IP address of CoPilot as the server and UDP port 31283
 (default, port is configurable).</p>
 <div class="paragraph">
-<p>You should start seeing NetFlow in CoPilot after a few minutes.
-. (For remote syslog service) To enable syslog for performance
-monitoring in CoPilot, ensure that the controller is configured to
-specify CoPilot as the loghost server.</p>
+<p>You should start seeing NetFlow in CoPilot after a few minutes.</p>
 </div>
 </li>
+</ol>
+</div>
+</li>
+<li>
+<p>(For remote syslog service) To enable syslog for performance
+monitoring in CoPilot, ensure that the controller is configured to
+specify CoPilot as the loghost server.</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
 <li>
 <p>Log in to Aviatrix Controller.</p>
 </li>
@@ -517,6 +535,9 @@ specify CoPilot as the loghost server.</p>
 <li>
 <p>Enable the Service, choose a Profile Index (ie. 0), and use the
 static IP address of CoPilot as the server and UDP port 5000 (default).</p>
+</li>
+</ol>
+</div>
 </li>
 </ol>
 </div>

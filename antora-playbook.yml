@@ -1,17 +1,27 @@
 site:
   title: Antora doc web test Site
   # the 404 page and sitemap files only get generated when the url property is set
-  url: https://aliceliudoc.github.io/docweb/
+  url: https://github.com/aliceliudoc/docweb.git
   start_page: index::index.adoc
 content:
+  tags: v2.0.2
+  branches: v2.0
   sources:
-  - url: https://github.com/aliceliudoc/docweb.git
+  - url: git@github.com:aliceliudoc/docweb.git
     start_path: docs
     branches: [master, v1.0, v2.0]
+    tags: v2.0.2
     edit_url: false
   - url: https://github.com/aliceliudoc/doc-web.git
     branches: [main, v2.0] 
     edit_url: false
+  - url: https://github.com/AviatrixDev/demodoc.git
+    branches: [v1.0] 
+    edit_url: false
+  - url: https://github.com/AviatrixSystems/docdemo.git
+    branches: [main] 
+    edit_url: false
+
 asciidoc:
   attributes:
     experimental: ''

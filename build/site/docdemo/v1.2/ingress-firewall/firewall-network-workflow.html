@@ -1,0 +1,1408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Untitled :: Antora doc web test Site</title>
+    <link rel="canonical" href="https://github.com/aliceliudoc/docweb.git/docdemo/v1.2/ingress-firewall/firewall-network-workflow.html">
+    <meta name="generator" content="Antora 3.0.0">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <script>var uiRootPath = '../../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://github.com/aliceliudoc/docweb.git">Antora doc web test Site</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="docdemo" data-version="v1.2">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../copilot-cloud-index.html">Aviatrix demo doc</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../firewall-ingress-index.html">Ingress Firewall Setup Solution</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../firewall-ingress-prequesities.html">firewall-ingress-prequesities.adoc</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../firewall-avxTransit-Vnet.html">Ingress Firewall Setup Solution</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../firewall-transitSpoke-Vnet.html">firewall-transitSpoke-Vnet.adoc</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../firewall-application-SpokeVnet.html">firewall-application-SpokeVnet.adoc</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../firewall-azure-SpokeVnet.html">firewall-azure-SpokeVnet.adoc</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Aviatrix demo doc</span>
+    <span class="version">v1.2</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <a class="title" href="../../../cloud-based/v2.0/copilot-cloud-index.html">Aviatrix cloud deployments doc</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../cloud-based/v2.0/copilot-cloud-index.html">v2.0</a>
+        </li>
+        <li class="version">
+          <a href="../../../cloud-based/v1.0/copilot-cloud-index.html">v1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../demo/v1.0/copilot-cloud-index.html">Aviatrix demo deployments doc</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../demo/v1.0/copilot-cloud-index.html">v1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <a class="title" href="../copilot-cloud-index.html">Aviatrix demo doc</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../copilot-cloud-index.html">v1.2</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../index/v3.0/index.html">Aviatrix web doc</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../index/v3.0/index.html">v3.0</a>
+        </li>
+        <li class="version">
+          <a href="../../../index/v2.0/index.html">v2.0</a>
+        </li>
+        <li class="version">
+          <a href="../../../index/v1.0/index.html">v1.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../../index/v3.0/index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<div class="sect1">
+<h2 id="firewall-network-firenet-workflow"><a class="anchor" href="#firewall-network-firenet-workflow"></a>Firewall Network (FireNet) Workflow</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>FireNet is a solution for integrating firewalls in the Transit Gateway
+(TGW) deployment for any Cloud Service Provider CSP): AWS, Azure, GCP,
+or OCI.</p>
+</div>
+<div class="paragraph">
+<p>If you are looking for firewall integration solution on Azure or in
+Aviatrix Multi-Cloud transit architecture, your starting point is
+<a href="https://docs.aviatrix.com/HowTos/transit_firenet_workflow.html">here</a>.</p>
+</div>
+<div class="paragraph">
+<p>For questions about FireNet, see the
+<a href="https://docs.aviatrix.com/HowTos/firewall_network_faq.html">FireNet FAQ</a>.</p>
+</div>
+<div class="sect2">
+<h3 id="creating-a-security-vpcvnet"><a class="anchor" href="#creating-a-security-vpcvnet"></a>Creating a Security VPC/VNet</h3>
+<div class="paragraph">
+<p>We recommend that you use the Aviatrix Useful Tools to create a VPC/VNet
+for a FireNet deployment.</p>
+</div>
+<div class="paragraph">
+<p>Select the <strong>Aviatrix FireNet VPC</strong> option when creating a security
+VPC/VNet.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top"><strong>Aviatrix FireNet VPC Public Subnet</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-Public-gateway-and-firewall-mgmt-AZ-a</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A /28 subnet (public in
+AWS/GCP/OCI) in AZ a for FireNet Gateway and firewall instance
+management interface.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-Public-gateway-and-firewall-mgmt-AZ-b</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A /28 subnet (public in
+AWS/GCP/OCI) in AZ b for FireNet HA Gateway and firewall instance
+management interface.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-Public-FW-ingress-egress-AZ-a</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A /28 subnet (public in AWS/GCP/OCI) in
+AZ a for firewall instance&#8217;s egress interface.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-Public-FW-ingress-egress-AZ-b</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A /28 subnet (public in AWS/GCP/OCI) in
+AZ b for firewall instance&#8217;s egress interface.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="subscribing-to-a-firewall-instance-aws-only"><a class="anchor" href="#subscribing-to-a-firewall-instance-aws-only"></a>Subscribing to a Firewall Instance (AWS Only)</h3>
+<div class="paragraph">
+<p>Before setting up Aviatrix FireNet, AWS customers need to subscribe to a
+firewall instance from a specific vendor on the AWS Marketplace.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="title">Note</div>
+<div class="paragraph">
+<p>This document section applies to AWS customers <strong>only</strong>. Azure, GCP, and
+OCI customers can launch firewall instances directly from the Aviatrix
+Controller without subscriptions.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>To subscribe to a firewall instance from AWS, use the following steps.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>In your AWS account, search for <strong>AWS Marketplace Subscriptions</strong>.</p>
+</li>
+<li>
+<p>On the AWS Marketplace Subscriptions page, select <strong>Discover products</strong>.</p>
+</li>
+<li>
+<p>In the search bar, enter the type of firewall instance you wish to
+subscribe to:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Enter “VM-series” to search for a Palo Alto firewall instance.</p>
+</li>
+<li>
+<p>Enter “CloudGuard” to search for a Check Point firewall instance.</p>
+</li>
+<li>
+<p>Enter “Fortigate” to search for a Fortinet firewall instance.</p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="4">
+<li>
+<p>From the results, select a bundle and/or license option for the
+firewall instance you wish to subscribe to. There are different
+bundle/license options for each instance type that represent different
+costs and performance offerings.</p>
+</li>
+<li>
+<p>On the next page, click <strong>Continue to subscribe</strong> to subscribe to the
+instance.</p>
+</li>
+<li>
+<p>On the next page, click <strong>Accept terms</strong> to accept the license terms.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>After you subscribe to the firewall instance, wait for the Effective
+date column to change from “Pending” to today’s date. Then, return to
+the Aviatrix Controller to launch the firewall instance from there.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="creating-a-firewall-domain"><a class="anchor" href="#creating-a-firewall-domain"></a>Creating a Firewall Domain</h3>
+<div class="paragraph">
+<p>This step creates a Security Domain with a Firewall Domain option.</p>
+</div>
+<div class="paragraph">
+<p>In your Aviatrix Controller, go to TGW Orchestrator &gt; Plan &gt; Create an
+AWS Transit Gateway and then a Security Domain by selecting <strong>Aviatrix
+Firewall Domain</strong>.</p>
+</div>
+<div class="paragraph">
+<p>For more information, refer to
+<a href="https://docs.aviatrix.com/HowTos/tgw_plan.html#create-a-new-security-domain">Create
+a New Security Domain</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="launching-aviatrix-firenet-gateway"><a class="anchor" href="#launching-aviatrix-firenet-gateway"></a>Launching Aviatrix FireNet Gateway</h3>
+<div class="paragraph">
+<p>This step leverages the Transit Network workflow to launch one Aviatrix
+Gateway for FireNet deployment.</p>
+</div>
+<div class="paragraph">
+<p>C5x.large is the minimum Aviatrix gateway instance size for FireNet
+deployment as it requires
+<a href="https://docs.aviatrix.com/HowTos/firewall_network_faq.html#what-is-the-minimum-gateway-instance-size-for-firenet-deployment">4
+interfaces.</a></p>
+</div>
+<div class="paragraph">
+<p>If your deployment requires 2-AZ HA, go through Transit Network &gt; Setup
+to launch one Aviatrix gateway and enable HA which effectively launches
+a HA gateway (the second gateway) in a different AZ. If you select
+public subnet "-Public-gateway-and-firewall-mgmt-AZ-a" for the primary
+FireNet Gateway, you should select public subnet
+"-Public-gateway-and-firewall-mgmt-AZ-b" for the second AZ FireNet
+Gateway.</p>
+</div>
+<div class="paragraph">
+<p>Do not mark the <strong>Insane Mode Encryption</strong> checkbox.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="enabling-aviatrix-firenet-gateway"><a class="anchor" href="#enabling-aviatrix-firenet-gateway"></a>Enabling Aviatrix FireNet Gateway</h3>
+<div class="paragraph">
+<p>This step configures the gateway launched in the "Launching an Aviatrix
+FireNet Gateway" section above or FireNet function. If you have HA
+enabled, it automatically sets up the HA gateway for FireNet deployment.</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>If you do not see any gateways in the dropdown menu, refresh the browser
+to load.</p>
+</div>
+</blockquote>
+</div>
+<div class="paragraph">
+<p>In this step, the Aviatrix Controller creates 3 more Ethernet interfaces
+with associated subnets on the FireNet Gateways.</p>
+</div>
+<div class="paragraph">
+<p><span class="image unresolved"><img src="firewall_network_workflow_media/private_interfaces.png" alt="private_interfaces"></span></p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top"><strong>FireNet Gateway instance interfaces</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Inbound Security Group Rule</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">eth0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Allow SSH and HTTPS from Aviatrix Controller</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Public interface
+for communication with Controller</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">eth1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Allow ALL (Do not change)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Private interface for traffic to/from
+TGW</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">eth2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Allow ALL (Do not change)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Private interface for traffic to
+firewall instances</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">eth3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Allow ALL (Do not change)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Private interface for traffic to
+FireNet HA gateway</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="title">Important</div>
+<div class="paragraph">
+<p>Please do not change the security group inbound and outbound rules on
+eth1, eth2, and eth3 of a FireNet Gateway.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>If FireNet Gateway HA is enabled, the HA gateway shares the same route
+table as the primary for its eth1 interface.</p>
+</div>
+<div class="paragraph">
+<p>The new subnets created by the Controller at these steps are listed
+below.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top"><strong>Aviatrix FireNet VPC/VNet Private Subnet</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-tgw-egress</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">for FireNet Gateway eth1 to TGW</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-hagw-tgw-egress</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">for FireNet HA Gateway eth1 to TGW</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-tgw-ingress</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">for TGW to the ENI of eth1 of FireNet Gateway</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-hagw-tgw-ingress</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">for TGW to the ENI of eth1 of the FireNet HA Gateway</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-dmz-firewall</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">for FireNet Gateway eth2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-hagw-dmz-firewall</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">for FireNet HA Gateway eth2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-dmz-exchange</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">for FireNet Gateway eth3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-hagw-dmz-exchange</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">for FireNet HA Gateway eth3</p></td>
+</tr>
+</tbody>
+</table>
+<div class="sect3">
+<h4 id="enabling-the-aviatrix-gateway-for-firenet-function"><a class="anchor" href="#enabling-the-aviatrix-gateway-for-firenet-function"></a>Enabling the Aviatrix Gateway for FireNet Function</h4>
+<div class="paragraph">
+<p>This step configures the gateway launched in the "Launching Aviatrix
+FireNet Gateway" section above for FireNet function with AWS Gateway
+Load Balancer (GWLB). If you have HA enabled, it automatically sets up
+the HA gateway for FireNet deployment.</p>
+</div>
+<div class="paragraph">
+<p>In the dropdown menu, select one Aviatrix Transit Gateway, mark the <strong>Use
+AWS GWLB</strong> checkbox and click <strong>Enable</strong>.</p>
+</div>
+<div class="paragraph">
+<p>In this step, the Aviatrix Controller creates 2 more Ethernet interfaces
+with associated subnets on the FireNet Gateways.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top"><strong>FireNet Gateway instance interfaces</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Inbound Security Group Rule</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">eth0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Allow SSH and HTTPS from Aviatrix Controller</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Public interface
+for communication with Controller</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">eth1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Allow ALL (Do not change)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Private interface for traffic to/from
+TGW</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">eth2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Allow ALL (Do not change)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Private interface for traffic to
+firewall instances</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="title">Important</div>
+<div class="paragraph">
+<p>Please do not change the security group inbound and outbound rules on
+eth1 and eth2 of a FireNet Gateway.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>If FireNet Gateway HA is enabled, the HA gateway shares the same route
+table as the primary for its eth1 interface.</p>
+</div>
+<div class="paragraph">
+<p>The new subnets created by the Controller at these steps are listed
+below.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top"><strong>Aviatrix FireNet VPC/VNet Private Subnet</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-tgw-egress</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">for FireNet Gateway eth1 to TGW</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-hagw-tgw-egress</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">for FireNet HA Gateway eth1 to TGW</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-tgw-ingress</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">for TGW to the ENI of eth1 of FireNet Gateway</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-hagw-tgw-ingress</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">for TGW to the ENI of eth1 of the FireNet HA Gateway</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-dmz-firewall</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">for FireNet Gateway eth2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-hagw-dmz-firewall</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">for FireNet HA Gateway eth2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-gwlb-pool</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">for GWLB and Firewalls</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-gwlb-pool-ha</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">for GWLB and Firewalls in different AZ</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-gwlb-egress</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">for FireNet Gateway (if egress inspection is enabled)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-gwlb-egress-ha</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">for FireNet HA Gateway (if egress inspection is
+enabled)</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p><span class="image unresolved"><img src="firewall_network_workflow_media/gwlb_tgw_avxgw.png" alt="gwlb_tgw_avxgw"></span></p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="title">Note</div>
+<div class="paragraph">
+<p>HTTPS needs to be opened on firewall appliance for health check. See
+<a href="https://docs.aviatrix.com/HowTos/transit_firenet_workflow_azure.html#step-9-enable-health-check-policy-in-firewall">firewall
+health check</a> for more information.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="enabling-native-aws-gwlb-for-firenet-function"><a class="anchor" href="#enabling-native-aws-gwlb-for-firenet-function"></a>Enabling Native AWS GWLB for FireNet Function</h4>
+<div class="paragraph">
+<p>This step integrates the AWS Transit Gateway (TGW) with AWS Gateway Load
+Balancer (GWLB) for native FireNet solution.</p>
+</div>
+<div class="paragraph">
+<p>In the dropdown menu, select the right AWS Account and region, provide
+the right security VPC/VNet and click <strong>Enable</strong>.</p>
+</div>
+<div class="paragraph">
+<p>The Aviatrix Controller will automatically create the new subnets, GWLB
+and GWLBe.</p>
+</div>
+<div class="paragraph">
+<p>The new subnets created by the Controller at these steps are listed
+below.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top"><strong>Aviatrix FireNet VPC/VNet Private Subnet</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-tgw-ingress</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">for TGW ENI to the GWLBe</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-hagw-tgw-ingress</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">for TGW ENI to the GWLBe in different AZ</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-dmz-firewall</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">for GWLBe</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-hagw-dmz-firewall</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">for GWLBe in different AZ</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-gwlb-pool</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">for GWLB and Firewalls</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-gwlb-pool-ha</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">for GWLB and Firewalls in different AZ</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-gwlb-egress</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">for NATGW gateway (if egress inspection is enabled)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-gwlb-egress-ha</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">for NATGW HA gateway (if egress inspection is enabled)</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p><span class="image unresolved"><img src="firewall_network_workflow_media/gwlb_native.png" alt="gwlb_native"></span></p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="title">Note</div>
+<div class="paragraph">
+<p>HTTPS needs to be opened on firewall appliance for health check. Check
+<a href="https://docs.aviatrix.com/HowTos/transit_firenet_workflow_azure.html#step-9-enable-health-check-policy-in-firewall">Firewall
+Health Check</a> for more information.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="attaching-aviatrix-firenet-gateway-to-tgw-firewall-domain"><a class="anchor" href="#attaching-aviatrix-firenet-gateway-to-tgw-firewall-domain"></a>Attaching Aviatrix FireNet Gateway to TGW Firewall Domain</h3>
+<div class="paragraph">
+<p>This step requires you have already created a Security Domain with
+Firewall attribute enabled.</p>
+</div>
+<div class="paragraph">
+<p>When this step is completed, you have built the network infrastructure
+for FireNet deployment. This step may take a few minutes.</p>
+</div>
+<div class="paragraph">
+<p><span class="image unresolved"><img src="firewall_network_workflow_media/gw_launch.png" alt="gw_launch"></span></p>
+</div>
+<div class="paragraph">
+<p>This step programs the relative route tables, described as below.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top"><strong>Aviatrix FireNet VPC/VNet route table</strong></th>
+<th class="tableblock halign-left valign-top"><strong>key route entry</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-tgw-egress</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.0.0.0/0 &#8594; tgw</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">for FireNet Gateway eth1 to TGW</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-hagw-tgw-egress</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.0.0.0/0 &#8594; tgw</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">for FireNet HA gateway eth1 to TGW</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-tgw-ingress</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.0.0.0/0 &#8594; eth1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">for TGW to eth1 of FireNet Gateway</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-hagw-tgw-ingress</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.0.0.0/0 &#8594; eth1.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">for TGW to eth1 of FireNet HA
+gateway</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-dmz-firewall</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.0.0.0/0 &#8594; tgw</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">for firewall instance LAN interface to
+TGW</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-hagw-dmz-firewall</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.0.0.0/0 &#8594; tgw</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">for firewall instance LAN
+interface to TGW</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-dmz-exchange</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.0.0.0/0 &#8594; eth3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">for eth3 of FireNet Gateway to eth3
+of HA gateway</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-hagw-dmz-exchange</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.0.0.0/0 &#8594; eth3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">for eth3 of FireNet HA gateway
+to eth3 of primary gateway</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="launching-and-associating-firewall-instance"><a class="anchor" href="#launching-and-associating-firewall-instance"></a>Launching and Associating Firewall Instance</h3>
+<div class="paragraph">
+<p>This approach is recommended if this is the first Firewall instance to
+be attached to the gateway.</p>
+</div>
+<div class="paragraph">
+<p>This step launches a Firewall instance and associates it with one of the
+FireNet Gateways.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="title">Important</div>
+
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>The Firewall instance and the associated Aviatrix FireNet Gateway above
+must be in the same AZ, and, we recommend that the Management Interface
+Subnet and Egress (untrust dataplane) Interface Subnet should not be in
+the same subnet.</p>
+</div>
+<div class="sect3">
+<h4 id="launching-and-attaching"><a class="anchor" href="#launching-and-attaching"></a>Launching and Attaching</h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top"><strong>Setting</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Value</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">VPC ID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The Security VPC/VNet created above.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Gateway Name</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The primary FireNet Gateway.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Firewall Instance Name</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The name that will be displayed on the AWS
+Console.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Firewall Image</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The AWS AMI that subscribed to above.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Firewall Image Version</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Firewall instance current supported software
+versions.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Firewall Instance Size</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Firewall instance type.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Management Interface Subnet.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Select the subnet whose name contains
+"gateway and firewall management"</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egress Interface Subnet</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Select the subnet whose name contains
+"FW-ingress-egress".</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Username</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Applicable to Azure deployment only. "admin" as a username is
+not accepted.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Password</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Applicable to Azure deployment only.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Key Pair Name (Optional)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The .pem file name for SSH access to the
+firewall instance.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Attach (Optional)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">By selecting this option, the firewall instance is
+inserted in the data path to receive packet. If this is the second
+firewall instance for the same gateway and you have an operational
+FireNet deployment, you should not select this option as the firewall is
+not configured yet. You can attach the firewall instance later at
+Firewall Network &gt; Advanced page.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Advanced (Optional)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Click this selection to allow Palo Alto firewall
+bootstrap files to be specified.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">IAM Role</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">In advanced mode, create an IAM Role on the AWS account that
+launched the FireNet Gateway. Create a policy to attach to the role. The
+policy is to allow access to "Bootstrap Bucket". This option is not
+supported on Check Point.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bootstrap Bucket Name</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">In advanced mode, specify a bootstrap bucket
+name where the initial configuration and policy file is stored. This
+option is not supported on Check Point.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">User Data</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">In advanced mode and applicable to Check Point and
+FortiGate. For FortiGate in Azure, refer to
+<a href="https://docs.aviatrix.com/HowTos/fortigate_bootstrap_example_azure.html#method-1-configure-fortigate-firewall-via-user-data">FortiGate
+User Data in Azure</a>. For Check Point in Azure, refer to
+<a href="https://docs.aviatrix.com/HowTos/checkpoint_bootstrap_azure.html#configure-check-point-security-gateway-using-custom-data">Check
+Point User Data in Azure</a>.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="sect4">
+<h5 id="1-palo-alto-vm-series-specifications"><a class="anchor" href="#1-palo-alto-vm-series-specifications"></a>1. Palo Alto VM-Series Specifications</h5>
+<div class="paragraph">
+<p>Palo instance has 3 interfaces as described below.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top"><strong>Palo Alto VM instance interfaces</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Description</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Inbound Security
+Group Rule</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">eth0 (on subnet -Public-FW-ingress-egress-AZ-a)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egress or Untrusted
+interface</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Allow ALL</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">eth1 (on subnet -Public-gateway-and-firewall-mgmt-AZ-a)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Management
+interface</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Allow SSH, HTTPS, ICMP, TCP 3978</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">eth2 (on subnet -dmz-firewall)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LAN or Trusted interface</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Allow ALL (Do
+not change)</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Note that firewall instance eth2 is on the same subnet as FireNet
+Gateway eth2 interface.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="title">Important</div>
+<div class="paragraph">
+<p>For Panorama managed firewalls, you need to prepare Panorama first and
+then launch a firewall. Check out
+<a href="https://docs.aviatrix.com/HowTos/paloalto_API_setup.html#managing-vm-series-by-panorama">Setup
+Panorama</a>. When a VM-Series instance is launched and connected with
+Panorama, you need to apply a one time "commit and push" from the
+Panorama console to sync the firewall instance and Panorama.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="title">Tip</div>
+<div class="paragraph">
+<p>If VM-Series are individually managed and integrated with the
+Controller, you can still use Bootstrap to save initial configuration
+time. Export the first firewall&#8217;s configuration to bootstrap.xml, create
+an IAM role and Bootstrap bucket structure as indicated above, then
+launch additional firewalls with IAM role and the S3 bucket name to save
+the time of the firewall manual initial configuration.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect4">
+<h5 id="2-fortigate-specifications"><a class="anchor" href="#2-fortigate-specifications"></a>2. Fortigate Specifications</h5>
+<div class="paragraph">
+<p>Fortigate Next Generation Firewall instance has 2 interfaces as
+described below.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top"><strong>Fortigate VM instance interfaces</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Description</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Inbound Security
+Group Rule</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">eth0 (on subnet -Public-FW-ingress-egress-AZ-a)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egress or Untrusted
+interface</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Allow ALL</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">eth1 (on subnet -dmz-firewall)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LAN or Trusted interface</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Allow ALL (Do
+not change)</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Note that firewall instance eth1 is on the same subnet as FireNet
+Gateway eth2 interface.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="title">Tip</div>
+<div class="paragraph">
+<p>Starting from Release 5.4, Fortigate bootstrap configuration is
+supported.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect4">
+<h5 id="3-checkpoint-specification"><a class="anchor" href="#3-checkpoint-specification"></a>3. CheckPoint Specification</h5>
+<div class="paragraph">
+<p>CheckPoint Firewall instance has 2 interfaces as described below.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top"><strong>CheckPoint VM instance interfaces</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Description</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Inbound Security
+Group Rule</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">eth0 (on subnet -Public-FW-ingress-egress-AZ-a)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egress or Untrusted
+interface</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Allow ALL</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">eth1 (on subnet -dmz-firewall)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LAN or Trusted interface</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Allow ALL (Do
+not change)</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Note that firewall instance eth1 is on the same subnet as FireNet
+Gateway eth2 interface.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="title">Important</div>
+<div class="paragraph">
+<p>Starting from Release 5.4, launching CheckPoint firewall instances from
+the Aviatrix Controller automatically initiates its onboarding process.
+For initial login information, go to
+<a href="https://aviatrix.zendesk.com/hc/en-us/articles/4417552852109">Credentials
+for Checkpoint Initial Login</a>. You must be registered to access the
+Aviatrix Customer Support website. If you are not already registered,
+you can sign-up at <a href="https://support.aviatrix.com" class="bare">https://support.aviatrix.com</a>.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="launch-and-associate-more"><a class="anchor" href="#launch-and-associate-more"></a>Launch and Associate More</h4>
+<div class="paragraph">
+<p>Repeat the previous step to launch the second firewall instance to
+associate with the HA FireNet Gateway. Or repeat this step to launch
+more firewall instances to associate with the same FireNet Gateway.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="example-setup-for-allow-all-policy"><a class="anchor" href="#example-setup-for-allow-all-policy"></a>Example Setup for "Allow All" Policy</h4>
+<div class="paragraph">
+<p>After a firewall instance is launched, wait for 15 minutes for it to
+come up. In addition, please follow example configuration guides as
+below to build a simple policy on the firewall instance for a test
+validation that traffic is indeed being routed to firewall instance.</p>
+</div>
+<div class="sect4">
+<h5 id="palo-alto"><a class="anchor" href="#palo-alto"></a>Palo Alto</h5>
+<div class="paragraph">
+<p>For basic configuration, please refer to
+<a href="https://docs.aviatrix.com/HowTos/config_paloaltoVM.html">this example
+configuration guide</a>.</p>
+</div>
+<div class="paragraph">
+<p>For implementation details on using Bootstrap to launch and initiate
+VM-Series, refer to
+<a href="https://docs.aviatrix.com/HowTos/bootstrap_example.html">Bootstrap
+Configuration Example</a>.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="fortigate"><a class="anchor" href="#fortigate"></a>FortiGate</h5>
+<div class="paragraph">
+<p>For basic configuration, please refer to
+<a href="https://docs.aviatrix.com/HowTos/config_FortiGateVM.html">this example
+configuration guide</a>.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="checkpoint"><a class="anchor" href="#checkpoint"></a>CheckPoint</h5>
+<div class="paragraph">
+<p>For basic configuration, please refer to
+<a href="https://docs.aviatrix.com/HowTos/config_CheckPointVM.html">this example
+configuration guide</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="associate-an-existing-firewall-instance"><a class="anchor" href="#associate-an-existing-firewall-instance"></a>Associate an Existing Firewall Instance</h3>
+<div class="paragraph">
+<p>This step is the alternative step to the previous step. If you already
+launched VM-Series from the AWS Console, you can still associate it with
+the FireNet Gateway.</p>
+</div>
+<div class="paragraph">
+<p>If the firewall instance is by a vendor other than Palo Alto Network,
+for example, Checkpoint or Fortinet, you should launch the firewall
+instances from the AWS Console and associate them to the Aviatrix
+FireNet Gateway. The Management Interface Subnet may be the same as the
+Egress Interface Subnet.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="launching-associating-aviatrix-fqdn-gateway"><a class="anchor" href="#launching-associating-aviatrix-fqdn-gateway"></a>Launching &amp; Associating Aviatrix FQDN Gateway</h3>
+<div class="paragraph">
+<p>If you perform one of the previous two steps, then you must be using a
+third party firewall instance. Skip this step.</p>
+</div>
+<div class="paragraph">
+<p>This option is to deploy
+<a href="https://docs.aviatrix.com/HowTos/fqdn_faq.html">Aviatrix FQDN gateway</a> in
+a FireNet environment for a centralized scale out egress whitelist
+solution, as shown below.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="title">Important</div>
+<div class="paragraph">
+<p>If a deployed Aviatrix FQDN gateway has no FQDN whitelist attached to
+it, the FQDN gateway acts as a NAT gateway and it will pass all traffic
+to all destination sites. To add whitelist policies, follow
+<a href="https://docs.aviatrix.com/HowTos/FQDN_Whitelists_Ref_Design.html">how to
+configure FQDN instructions</a>.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>This option is available in AWS and Azure. It applies to multi-cloud
+transit, Azure native Spoke transit, and TGW based transit.</p>
+</div>
+<div class="paragraph">
+<p><span class="image unresolved"><img src="transit_firenet_design_patterns_media/fqdn_egress.png" alt="fqdn_egress"></span></p>
+</div>
+<div class="paragraph">
+<p><span class="image unresolved"><img src="firewall_network_workflow_media/fqdn_in_firenet.png" alt="fqdn_in_firenet"></span></p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top"><strong>Setting</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Value</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">VPC ID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The Security VPC/VNet created in Step 1.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Gateway Name</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The primary FireNet Gateway.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">FQDN Gateway Subnet</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The public subnet on which Aviatrix FQDN gateway
+will be launched.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">FQDN Gateway Size</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The Aviatrix FQDN gateway instance size, starting
+from t2.micro.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">FQDN Gateway Name</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The Aviatrix FQDN gateway name. Note you cannot
+change the name once the gateway instance is launched.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Attach</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Attach this FQDN gateway to the primary FireNet Gateway.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="specify-security-domain-for-firewall-inspection"><a class="anchor" href="#specify-security-domain-for-firewall-inspection"></a>Specify Security Domain for Firewall Inspection</h3>
+<div class="paragraph">
+<p>There are two inspection modes. One is Domain-based inspection, which is
+the default. The other is Connection Policy based inspection. The
+Connection Policy based inspection mode (connection based inspection) is
+available in Release 6.3 and later.</p>
+</div>
+<div class="sect3">
+<h4 id="domain-based-inspection"><a class="anchor" href="#domain-based-inspection"></a>Domain-based inspection</h4>
+<div class="paragraph">
+<p>In domain-based inspection, to specify a Spoke VPC/VNet that needs
+inspection is to define a connection policy of the Security Domain,
+where the Spoke VPC/VNet is a member, to the Firewall Domain.</p>
+</div>
+<div class="paragraph">
+<p>For example, if you wish to inspect traffic between on-prem to VPC/VNet,
+connect Aviatrix Edge Domain to the Firewall Domain. This means on-prem
+traffic to any Spoke VPC/VNet is routed to the firewall first and then
+it is forwarded to the destination Spoke VPC/VNet. Conversely, any Spoke
+VPC/VNet traffic destined to on-prem is routed to the firewall first and
+then forwarded to on-prem.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="connection-based-inspection"><a class="anchor" href="#connection-based-inspection"></a>Connection-based inspection</h4>
+<div class="paragraph">
+<p>Connection-based inspection only applies to TGW-based Transit solution.</p>
+</div>
+<div class="paragraph">
+<p>Connection-based inspection is available from Release 6.3 and later.
+Connection-based inspection allows you to inspect traffic going across a
+specific pair of Security Domains. For example, Domain A has connection
+policy to Domain B and Domain C, you can specify to inspect traffic
+between Domain A and Domain B, but not Domain A and Domain C. This
+inspection mode reduces the amount of traffic being inspected and
+reduces the instances size requirements on both FireNet Gateways and
+firewalls.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="title">Note</div>
+<div class="paragraph">
+<p>Connection-based inspection is not applicable to
+<a href="https://docs.aviatrix.com/HowTos/tgw_list.html#edit-intra-domain-inspection">intra-domain
+inspection</a> where all VPC/VNet to VPC/VNet traffic in the same domain is
+inspected.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Here are the steps to enable and configure connection-based inspection.</p>
+</div>
+<div class="sect4">
+<h5 id="enabling-connection-based-inspection"><a class="anchor" href="#enabling-connection-based-inspection"></a>Enabling Connection-Based Inspection</h5>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Go to Controller &gt; TGW Orchestrator &gt; List.</p>
+</li>
+<li>
+<p>Click TGW, select one TGW, click Action &gt; Edit Inspection Mode.</p>
+</li>
+<li>
+<p>Select <strong>Connection-based</strong> and click <strong>Update</strong>.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect4">
+<h5 id="configuring-east-west-inspection"><a class="anchor" href="#configuring-east-west-inspection"></a>Configuring East-West Inspection</h5>
+<div class="paragraph">
+<p><a href="https://docs.aviatrix.com/HowTos/firewall_network_workflow.html#create-a-firewall-domain">A
+firewall security domain</a> must be created first before configuring
+east-west inspection.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Go to Controller &gt; TGW Orchestrator &gt; List.</p>
+</li>
+<li>
+<p>Click <strong>Connection</strong> to display all Connection Policies in rows.</p>
+</li>
+<li>
+<p>Select <strong>Connection Policy</strong> and click Action &gt; Enable Inspection.</p>
+</li>
+<li>
+<p>In the popup dropdown menu, select a firewall domain to associate the
+Connection Policy with.</p>
+</li>
+<li>
+<p>Click <strong>Update</strong>.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Repeat these steps for other Connection Policies.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="configuring-egress-inspection"><a class="anchor" href="#configuring-egress-inspection"></a>Configuring Egress Inspection</h5>
+<div class="paragraph">
+<p>The Firewall Domain must have
+<a href="https://docs.aviatrix.com/HowTos/firewall_advanced.html#egress-through-firewall">Egress
+Inspection</a> enabled before configuring Egress Inspection.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Go to Controller &gt; TGW Orchestrator &gt; List.</p>
+</li>
+<li>
+<p>Click Security Domains which displays all Security Domains configured
+on the TGW.</p>
+</li>
+<li>
+<p>Select one domain and click Action &gt; Enable Egress Inspection.</p>
+</li>
+<li>
+<p>In the popup dropdown menu, select a firewall domain to associate the
+domain with.</p>
+</li>
+<li>
+<p>Click <strong>Update</strong>.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../../_/js/site.js"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

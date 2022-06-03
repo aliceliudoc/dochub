@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Untitled :: Antora doc web test Site</title>
+    <link rel="canonical" href="https://github.com/aliceliudoc/docweb.git/docdemo/v1.2/firewall-azure-SpokeVnet.html">
+    <link rel="prev" href="firewall-application-SpokeVnet.html">
+    <meta name="generator" content="Antora 3.0.0">
+    <link rel="stylesheet" href="../../_/css/site.css">
+    <script>var uiRootPath = '../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://github.com/aliceliudoc/docweb.git">Antora doc web test Site</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="docdemo" data-version="v1.2">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="copilot-cloud-index.html">Aviatrix demo doc</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="firewall-ingress-index.html">Ingress Firewall Setup Solution</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="firewall-ingress-prequesities.html">firewall-ingress-prequesities.adoc</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="firewall-avxTransit-Vnet.html">Ingress Firewall Setup Solution</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="firewall-transitSpoke-Vnet.html">firewall-transitSpoke-Vnet.adoc</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="firewall-application-SpokeVnet.html">firewall-application-SpokeVnet.adoc</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="firewall-azure-SpokeVnet.html">firewall-azure-SpokeVnet.adoc</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Aviatrix demo doc</span>
+    <span class="version">v1.2</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <a class="title" href="../../cloud-based/v2.0/copilot-cloud-index.html">Aviatrix cloud deployments doc</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../cloud-based/v2.0/copilot-cloud-index.html">v2.0</a>
+        </li>
+        <li class="version">
+          <a href="../../cloud-based/v1.0/copilot-cloud-index.html">v1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../demo/v1.0/copilot-cloud-index.html">Aviatrix demo deployments doc</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../demo/v1.0/copilot-cloud-index.html">v1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <a class="title" href="copilot-cloud-index.html">Aviatrix demo doc</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="copilot-cloud-index.html">v1.2</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../index/v3.0/index.html">Aviatrix web doc</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../index/v3.0/index.html">v3.0</a>
+        </li>
+        <li class="version">
+          <a href="../../index/v2.0/index.html">v2.0</a>
+        </li>
+        <li class="version">
+          <a href="../../index/v1.0/index.html">v1.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../index/v3.0/index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="copilot-cloud-index.html">Aviatrix demo doc</a></li>
+    <li><a href="firewall-ingress-index.html">Ingress Firewall Setup Solution</a></li>
+    <li><a href="firewall-azure-SpokeVnet.html">firewall-azure-SpokeVnet.adoc</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<div class="sect2">
+<h3 id="deploying-application-spoke-vnet"><a class="anchor" href="#deploying-application-spoke-vnet"></a>Deploying Application Spoke VNet</h3>
+<div class="sect3">
+<h4 id="setup"><a class="anchor" href="#setup"></a>Setup</h4>
+<div class="paragraph">
+<p>Deploying an Application Spoke VNET <sup>^</sup><sup>^</sup><sup>^</sup><sup>^</sup><sup>^</sup><sup>^</sup><sup>^</sup><sup>^</sup><sup>^</sup><sup>^</sup><sup>^</sup></p>
+</div>
+<div class="paragraph">
+<p>Create an Application Spoke VNET by utilizing Aviatrix feature
+<a href="https://docs.aviatrix.com/HowTos/create_vpc.html">Create a VPC</a> as the
+previous step or manually deploying it in Azure portal. Moreover, feel
+free to use your existing Application VNET.</p>
+</div>
+<div class="paragraph">
+<p>Deploying an Ingress Spoke VNET <sup>^</sup><sup>^</sup><sup>^</sup><sup>^</sup><sup>^</sup><sup>^</sup><sup>^</sup><sup>^</sup><sup>^</sup>^^</p>
+</div>
+<div class="paragraph">
+<p>Create an Ingress Spoke VNET by using the Aviatrix feature
+<a href="https://docs.aviatrix.com/HowTos/create_vpc.html">Create a VPC</a> as the
+previous step or manually deploying it in Azure portal. Moreover, feel
+free to use your existing VNet.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="firewall-network-firenet-advanced-config"><a class="anchor" href="#firewall-network-firenet-advanced-config"></a>Firewall Network (FireNet) Advanced Config</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Firewall Network (FireNet) Advanced Config applies to both AWS TGW-based
+FireNet and Aviatrix Transit FireNet.</p>
+</div>
+<div class="paragraph">
+<p>For questions about FireNet, check out the
+<a href="https://docs.aviatrix.com/HowTos/firewall_network_faq.html">FireNet FAQ</a>.
+For questions on FireNet workflow, check out the
+<a href="https://docs.aviatrix.com/HowTos/firewall_network_workflow.html">FireNet
+Workflow</a>.</p>
+</div>
+<div class="paragraph">
+<p>For questions about Aviatrix Transit FireNet, check out
+<a href="https://docs.aviatrix.com/HowTos/transit_firenet_faq.html#transit-firenet-faq">Transit
+FireNet FAQ</a>. For questions on Aviatrix FireNet workflow, check out
+<a href="https://docs.aviatrix.com/HowTos/transit_firenet_workflow.html#transit-firenet-workflow-for-aws-azure">Transit
+FireNet Workflow</a>.</p>
+</div>
+<div class="sect2">
+<h3 id="traffic-inspection"><a class="anchor" href="#traffic-inspection"></a>Traffic Inspection</h3>
+<div class="paragraph">
+<p>You can enable and disable traffic inspection. When traffic inspection
+is disabled, FireNet Gateway loops back all packets.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="egress-through-firewall"><a class="anchor" href="#egress-through-firewall"></a>Egress through Firewall</h3>
+<div class="paragraph">
+<p>This is to enable Internet-bound egress traffic for inspection.</p>
+</div>
+<div class="paragraph">
+<p>To configure, go to Controller &gt; Firewall Network &gt; Advanced. Select one
+firewall domain and click the 3-dots skewer to the detail page. At
+Egress through Firewall, click <strong>Enable</strong>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="egress-static-cidrs"><a class="anchor" href="#egress-static-cidrs"></a>Egress Static CIDRs</h3>
+<div class="paragraph">
+<p>You can allow egress to a subset of your IP address space from your
+on-prem data center to the Internet with Aviatrix Egress FireNet. Static
+CIDR egress is supported on Aviatrix Transit and AWS Transit Gateways
+(TGW). Up to 20 subnets are supported.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="fail-close"><a class="anchor" href="#fail-close"></a>Fail Close</h3>
+<div class="paragraph">
+<p>Fail Close feature applies to the scenario where there are no firewalls
+attached to the FireNet Gateways. Fail Close is disabled by default.</p>
+</div>
+<div class="paragraph">
+<p>When Fail Close is disabled, east-west traffic that requires inspection
+can pass through the FireNet Gateways without having any attached
+firewalls, making the FireNet Gateway behave as a lookback interface.
+This is useful as it allows you to isolate and test network connectivity
+during troubleshooting.</p>
+</div>
+<div class="paragraph">
+<p>When Fail Close is enabled, FireNet Gateway drops all traffic when there
+are no firewalls attached to the FireNet Gateways.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="network-list-excluded-from-east-west-inspection"><a class="anchor" href="#network-list-excluded-from-east-west-inspection"></a>Network List Excluded From East-West Inspection</h3>
+<div class="paragraph">
+<p>By default, FireNet inspects all East-West (VPC/VNet to VPC/VNet)
+traffic but you may have an instance in the VPC/VNet which you do not
+want to be inspected. For example, the Aviatrix Controller deployed in
+the Shared Service VPC/VNet to be excluded from inspection while Shared
+Service VPC/VNet traffic is inspected. This improves the Controller
+reachability by not subjecting the Controller access to unintentional
+firewall policy errors.</p>
+</div>
+<div class="paragraph">
+<p>Put the CIDRs in the field <strong>"Network List Excluded From East-West
+Inspection"</strong> to exclude from being inspected by the firewall.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="title">Note</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Maximum 50 CIDRs coma-separated are supported.</p>
+</li>
+<li>
+<p>CIDRs are excluded from East-West inspections only.</p>
+</li>
+<li>
+<p>In Transit FireNet, if Egress inspection is enabled, all the Egress
+traffic will get inspected by the firewall even for the CIDRs excluded
+for East-West inspection.</p>
+</li>
+</ol>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="firewall-hashing"><a class="anchor" href="#firewall-hashing"></a>Firewall Hashing</h3>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Firewall Network solution supports two hashing types</dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p>Five-tuple and</p>
+</li>
+<li>
+<p>Two-tuple.</p>
+</li>
+</ul>
+</div>
+</dd>
+</dl>
+</div>
+<div class="paragraph">
+<p>By default, AWS TGW-based FireNet and Aviatrix Transit FireNet use
+5-tuple hashing algorithm (source IP, source port, destination IP,
+destination port and protocol type) to load balance the traffic across
+different firewall. However, user has an option to select two-tuple
+(source IP and destination IP) hashing algorithm to map traffic to the
+available firewalls.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="keep-alive-via-firewall-lan-interface"><a class="anchor" href="#keep-alive-via-firewall-lan-interface"></a>Keep Alive via Firewall Lan Interface</h3>
+<div class="paragraph">
+<p>For AWS, LAN or Management interface can be used for firewall health
+check and failure detection.</p>
+</div>
+<div class="paragraph">
+<p>By default, Aviatrix Controller check the firewall&#8217;s health by pinging
+the firewall&#8217;s management IP address. Starting 6.0, firewall instance’s
+health can also be checked by pinging its LAN interface from the
+connecting Aviatrix FireNet Gateway. This is an alternative approach
+which improves firewall failure detection time and detection accuracy.</p>
+</div>
+<div class="paragraph">
+<p>The mechanism is that the FireNet Gateway pings the firewall instance&#8217;s
+LAN interface every 5 seconds with a ping time out of 20ms. If the first
+ping times out, it immediately pings again. Two consecutive ping
+failures indicates the firewall is in down state and it is detached from
+the FireNet Gateway pool. The ping functions continues and it detects
+the firewall instance has come up by successful pings, it is attached
+back to the FireNet Gateway pool.</p>
+</div>
+<div class="paragraph">
+<p>With LAN interface pinging, the firewall instance fail over time is
+reduced.</p>
+</div>
+<div class="paragraph">
+<p>The following details describe how to enable ping on the firewall
+instance LAN interface.</p>
+</div>
+<div class="sect3">
+<h4 id="enabling-icmp-on-firewall-devices"><a class="anchor" href="#enabling-icmp-on-firewall-devices"></a>Enabling ICMP on Firewall Devices</h4>
+<div class="sect4">
+<h5 id="palo-alto-network"><a class="anchor" href="#palo-alto-network"></a><strong>Palo Alto Network</strong></h5>
+<div class="paragraph">
+<p>Go to Network &gt; Network Profiles &gt; Interface Mgmt and create profile to
+allow ping.</p>
+</div>
+<div class="paragraph">
+<p><span class="image unresolved"><img src="firewall_network_workflow_media/pan_network_profile.png" alt="pan_network_profile"></span></p>
+</div>
+<div class="paragraph">
+<p>Next, Go to Network &gt; Interfaces, select <strong>Ethernet 1/2</strong>, go to the
+Advanced tab &gt; Management Profile and select the profile just created in
+the step above.</p>
+</div>
+<div class="paragraph">
+<p><span class="image unresolved"><img src="firewall_network_workflow_media/pan_lan_attach.png" alt="pan_lan_attach"></span></p>
+</div>
+<div class="paragraph">
+<p>Commit changes</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="panoroma"><a class="anchor" href="#panoroma"></a><strong>Panoroma</strong></h5>
+<div class="paragraph">
+<p>Configure stack similar to Palo Alto Network shown above.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="check-point"><a class="anchor" href="#check-point"></a><strong>Check Point</strong></h5>
+<div class="paragraph">
+<p>Go to SmartConsole &gt; Global Properties &gt; Firewall &gt; Accept ICMP
+requests.</p>
+</div>
+<div class="paragraph">
+<p><span class="image unresolved"><img src="firewall_network_workflow_media/cp_ping_enable_1.png" alt="cp_ping_enable_1"></span></p>
+</div>
+<div class="paragraph">
+<p><span class="image unresolved"><img src="firewall_network_workflow_media/cp_ping_enable_2.png" alt="cp_ping_enable_2"></span></p>
+</div>
+<div class="paragraph">
+<p><strong>Fortigate (Fortinet)</strong> <sub>~</sub><sub>~</sub><sub>~</sub><sub>~</sub><sub>~</sub><sub>~</sub><sub>~</sub><sub>~</sub>~~`</p>
+</div>
+<div class="paragraph">
+<p>Go to Network &gt; Interfaces &gt; Edit Interface &gt; Mark the <strong>Ping</strong> checkbox.</p>
+</div>
+<div class="paragraph">
+<p><span class="image unresolved"><img src="firewall_network_workflow_media/fortigate_example_ping.png" alt="fortigate_example_ping"></span></p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="configuring-aviatrix-controller"><a class="anchor" href="#configuring-aviatrix-controller"></a>Configuring Aviatrix Controller</h4>
+<div class="paragraph">
+<p>Go to Firewall Network &gt; Advanced &gt; Click the 3 vertical dots as shown
+below:</p>
+</div>
+<div class="paragraph">
+<p><span class="image unresolved"><img src="firewall_network_workflow_media/firewall_advanced_lan_1.png" alt="firewall_advanced_lan_1"></span></p>
+</div>
+<div class="paragraph">
+<p>The expanded view shows the firewall deployed by the Aviatrix Controller
+and towards the end of screen shot, one can enable/disable LAN side
+Health Check.</p>
+</div>
+<div class="paragraph">
+<p><span class="image unresolved"><img src="firewall_network_workflow_media/firewall_advanced_lan_ping.png" alt="firewall_advanced_lan_ping"></span></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="verifying-lan-side-icmp-health-check"><a class="anchor" href="#verifying-lan-side-icmp-health-check"></a>Verifying LAN Side ICMP Health Check</h4>
+<div class="paragraph">
+<p>In this example, AWS and Check Point used to demonstrate the
+functionality as shown below:</p>
+</div>
+<div class="paragraph">
+<p><span class="image unresolved"><img src="firewall_network_workflow_media/example_topology_lan_ping.png" alt="example_topology_lan_ping"></span></p>
+</div>
+<div class="paragraph">
+<p>Go to Check Point logs and Monitoring section, notice that the ICMP
+health check is initiated every 5 seconds from the Aviatrix Transit
+FireNet Gateways. The 5 second setting is the default and cannot be
+changed.</p>
+</div>
+<div class="paragraph">
+<p><span class="image unresolved"><img src="firewall_network_workflow_media/cp_icmp_lan_example.png" alt="cp_icmp_lan_example"></span></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nav class="pagination">
+  <span class="prev"><a href="firewall-application-SpokeVnet.html">firewall-application-SpokeVnet.adoc</a></span>
+</nav>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

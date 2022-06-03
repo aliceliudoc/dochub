@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Untitled :: Antora doc web test Site</title>
+    <link rel="canonical" href="https://github.com/aliceliudoc/docweb.git/docdemo/v1.2/ingress-firewall/firewall-network-faq%20copy.html">
+    <meta name="generator" content="Antora 3.0.0">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <script>var uiRootPath = '../../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://github.com/aliceliudoc/docweb.git">Antora doc web test Site</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="docdemo" data-version="v1.2">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../copilot-cloud-index.html">Aviatrix demo doc</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../firewall-ingress-index.html">Ingress Firewall Setup Solution</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../firewall-ingress-prequesities.html">firewall-ingress-prequesities.adoc</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../firewall-avxTransit-Vnet.html">Ingress Firewall Setup Solution</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../firewall-transitSpoke-Vnet.html">firewall-transitSpoke-Vnet.adoc</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../firewall-application-SpokeVnet.html">firewall-application-SpokeVnet.adoc</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../firewall-azure-SpokeVnet.html">firewall-azure-SpokeVnet.adoc</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Aviatrix demo doc</span>
+    <span class="version">v1.2</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <a class="title" href="../../../cloud-based/v2.0/copilot-cloud-index.html">Aviatrix cloud deployments doc</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../cloud-based/v2.0/copilot-cloud-index.html">v2.0</a>
+        </li>
+        <li class="version">
+          <a href="../../../cloud-based/v1.0/copilot-cloud-index.html">v1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../demo/v1.0/copilot-cloud-index.html">Aviatrix demo deployments doc</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../demo/v1.0/copilot-cloud-index.html">v1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <a class="title" href="../copilot-cloud-index.html">Aviatrix demo doc</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../copilot-cloud-index.html">v1.2</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../index/v3.0/index.html">Aviatrix web doc</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../index/v3.0/index.html">v3.0</a>
+        </li>
+        <li class="version">
+          <a href="../../../index/v2.0/index.html">v2.0</a>
+        </li>
+        <li class="version">
+          <a href="../../../index/v1.0/index.html">v1.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../../index/v3.0/index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<div class="sect1">
+<h2 id="firewall-network-firenet-faq"><a class="anchor" href="#firewall-network-firenet-faq"></a>Firewall Network (FireNet) FAQ</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="what-is-aviatrix-firewall-network-firenet"><a class="anchor" href="#what-is-aviatrix-firewall-network-firenet"></a>What is Aviatrix Firewall Network (FireNet)?</h3>
+<div class="paragraph">
+<p>Aviatrix Firewall Network (FireNet) is a turnkey network solution to
+deploy firewall instances in the cloud, as shown in the diagram below.</p>
+</div>
+<div class="paragraph">
+<p><span class="image unresolved"><img src="firewall_network_faq_media/firewall_network.png" alt="firewall_network"></span></p>
+</div>
+<div class="paragraph">
+<p>FireNet significantly simplifies firewall instance deployment and allows
+the firewall instances to inspect VPC/VNet to VPC/VNet (East West)
+traffic, VPC/VNet to Internet (Egress) traffic, and VPC/VNet to on-prem
+(North South) traffic.</p>
+</div>
+<div class="paragraph">
+<p>In addition, FireNet allows you to scale firewall deployment to multiple
+AZs and multiple instances in active/active state.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="how-does-aviatrix-firenet-compare-with-the-native-deployment-in-aws-transit-gateway"><a class="anchor" href="#how-does-aviatrix-firenet-compare-with-the-native-deployment-in-aws-transit-gateway"></a>How does Aviatrix FireNet compare with the native deployment in AWS Transit Gateway?</h3>
+<div class="paragraph">
+<p>There are two native deployments: TGW VPN to connect to firewall or TGW
+VPC attachment to connect to firewall.</p>
+</div>
+<div class="paragraph">
+<p>The three different deployment models are illustrated in the diagram
+below.</p>
+</div>
+<div class="paragraph">
+<p><span class="image unresolved"><img src="firewall_network_faq_media/firewall_deploy.png" alt="firewall_deploy"></span></p>
+</div>
+<div class="paragraph">
+<p>If an AWS Transit Gateway connects to a firewall by using its built in
+VPN function, it must run IPsec and BGP. If you run more than one
+firewall instances by using ECMP, each firewall instance must configure
+SNAT function to ensure that both source and destination-initiated
+traffic lands on the same firewall instance. Furthermore, since native
+deployment requires an IPsec VPN which limits its performance to 1Gbps,
+in this scenario a single firewall instance can only perform at 500Mbps
+since the VPN function is traversed twice.</p>
+</div>
+<div class="paragraph">
+<p>A more detailed functional comparison is described in the table below.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top"><strong>Firewall Deployment Functions</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Firewall in VPN deployment</strong></th>
+<th class="tableblock halign-left valign-top">*<em>Firewall in VPC/VNet attachment</em></th>
+<th class="tableblock halign-left valign-top">* <strong>Firewall in Aviatrix FireNet</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">On-prem to VPC/VNet traffic inspection</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Yes</p>
+</div>
+</blockquote>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Yes</p>
+</div>
+</blockquote>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Yes</p>
+</div>
+</blockquote>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">VPC/VNet to VPC/VNet traffic inspection</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Yes (requires SNAT)</p>
+</div>
+</blockquote>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Yes</p>
+</div>
+</blockquote>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Yes</p>
+</div>
+</blockquote>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egress traffic inspection</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Per firewall performance</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">500Mbps</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Up to 6Gbps</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Up to 6Gbps</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Total FireNet performance</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&gt; 500Mbps</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Up to 6Gbps</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">up to 75Gbps</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Multiple firewalls (scale out)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No (Active/Standby)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Integrated solution</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No (requires external script)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Solution complexity</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">High</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Medium</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Low</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Centrally managed</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No (requires external script)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Multi-vendor support</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="what-are-the-benefits-of-firenet-deployment-model"><a class="anchor" href="#what-are-the-benefits-of-firenet-deployment-model"></a>What are the Benefits of FireNet Deployment Model?</h3>
+<div class="paragraph">
+<p>For enterprises that wish to deploy a firewall in any Cloud Service
+Provider (CSP) including AWS, Azure, GCP, or OCI, Aviatrix’s FireNet
+deployment model provides the best performance and automation.</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Simplicity</strong> The Aviatrix Firewall Network significantly simplifies
+firewall deployment in the cloud while providing the maximum performance
+and scale.</p>
+</li>
+<li>
+<p><strong>Full Traffic Inspection</strong> With FireNet, North South (on-prem and
+cloud), East West (VPC/VNet to VPC/VNet) and Internet bound egress
+traffic can be inspected by firewall instances.</p>
+</li>
+<li>
+<p><strong>No IPsec Tunnels</strong> There are no IPsec tunnels connecting to firewall
+instances as opposed to ECMP VPN deployment model, maximizing each
+firewall instance throughput.</p>
+</li>
+<li>
+<p><strong>No SNAT</strong> SNAT function is not required to be performed by firewall
+instances for east west traffic inspection as opposed to the ECMP VPN
+deployment model, resulting in instances in Spoke VPC/VNets having
+complete visibility of source traffic.</p>
+</li>
+<li>
+<p><strong>No BGP</strong> The Firewall does not need to run BGP. All routes programming
+is done by the Controller through Palo Alto APIs.</p>
+</li>
+<li>
+<p><strong>Scale Out</strong> Multiple firewall instances can be deployed as a group to
+meet the demand of increasing workload.</p>
+</li>
+<li>
+<p><strong>Policy Driven</strong> Policy driven workflow allows you to customize which
+VPC/VNets traffic should be inspected.</p>
+</li>
+<li>
+<p><strong>Vendor Integration</strong> Launch Palo Alto Networks VM-Series from the
+Aviatrix Controller console to simplify deployment.</p>
+</li>
+<li>
+<p><strong>Automation</strong> The Aviatrix Controller automatically updates Palo Alto
+VM-Series route tables when on-prem route changes or VPC/VNet attachment
+changes.</p>
+</li>
+</ul>
+</div>
+</blockquote>
+</div>
+</div>
+<div class="sect2">
+<h3 id="does-firenet-support-other-firewalls"><a class="anchor" href="#does-firenet-support-other-firewalls"></a>Does FireNet support other firewalls?</h3>
+<div class="paragraph">
+<p>The following firewalls are supported: - Palo Alto VM-Series - Check
+Point CloudGuard - Fortinet FortiGate</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="is-the-firenet-solution-recommended-by-palo-alto-networks"><a class="anchor" href="#is-the-firenet-solution-recommended-by-palo-alto-networks"></a>Is the FireNet solution recommended by Palo Alto Networks?</h3>
+<div class="paragraph">
+<p>Yes. Aviatrix is a technology
+<a href="https://www.paloaltonetworks.com/partners/alliance">partner of Palo Alto
+Networks.</a> Palo Alto has published the
+<a href="https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/technology-solutions-briefs/palo-alto-networks-and-aviatrix.pdf">joint
+solution brief.</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="does-firenet-work-with-other-firewall-appliances"><a class="anchor" href="#does-firenet-work-with-other-firewall-appliances"></a>Does FireNet work with other firewall appliances?</h3>
+<div class="paragraph">
+<p>Yes. FireNet solution has been validated to work with
+<a href="https://docs.aviatrix.com/HowTos/config_Checkpoint.html">Checkpoint</a>,
+<a href="https://docs.aviatrix.com/HowTos/config_FortiGate.html">FortiGate</a> and
+<a href="https://docs.aviatrix.com/HowTos/config_Barracuda.html">Barracuda
+CloudGen Firewall</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="how-is-firewall-network-different-from-transit-dmz"><a class="anchor" href="#how-is-firewall-network-different-from-transit-dmz"></a>How is Firewall Network different from Transit DMZ?</h3>
+<div class="paragraph">
+<p>Firewall Network is the new iteration from Transit DMZ. FireNet
+decouples the firewall deployment from the path between on-prem and
+Aviatrix Transit VPC/VNet, yet provides the same traffic inspection
+functions and more scale out capabilities.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="how-does-aviatrix-security-domains-work-with-firenet"><a class="anchor" href="#how-does-aviatrix-security-domains-work-with-firenet"></a>How Does Aviatrix Security Domains work with FireNet?</h3>
+<div class="paragraph">
+<p>Aviatrix
+<a href="https://docs.aviatrix.com/HowTos/tgw_faq.html#what-is-a-security-domain">Security
+Domain</a> builds on the AWS Transit Gateway (TGW) route domain concepts.
+It provides isolation and segmentation between VPC/VNets. With Aviatrix
+Security Domains, you can create a group of VPC/VNets with similar
+security requirements.</p>
+</div>
+<div class="paragraph">
+<p>There are situations where additional security measures such as packet
+inspection are required. That is, you need to deploy a firewall for
+certain VPC/VNets. FireNet provides the network solution that simplifies
+firewall deployment and scale.</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Deploy the Aviatrix FireNet in a special Security Domain with a
+Firewall Domain attribute.</p>
+</li>
+<li>
+<p>If a Security Domain has a connection policy to the Firewall Domain,
+then traffic going in and out of each VPC/VNet member in that Security
+Domain will first be forwarded to the Firewall for inspection. In other
+words, the connection policy specifies which domain (or a group of
+VPC/VNets) will be inspected by the firewall. See
+<a href="https://docs.aviatrix.com/HowTos/firewall_network_workflow.html#a-domain-based-inspection">Domain-based
+inspection</a>.</p>
+</li>
+<li>
+<p>Alternatively, starting in Release 6.3 you can specify inspection
+based on pairs of Connection Policies. See
+<a href="https://docs.aviatrix.com/HowTos/firewall_network_workflow.html#b-connection-based-inspection">Connection-based
+inspection</a>.</p>
+</li>
+</ol>
+</div>
+</blockquote>
+</div>
+</div>
+<div class="sect2">
+<h3 id="what-are-the-use-cases-for-firenet"><a class="anchor" href="#what-are-the-use-cases-for-firenet"></a>What are the use cases for FireNet?</h3>
+<div class="paragraph">
+<p>Example 1. VPC/VNet with PCI data <mark><mark></mark><mark></mark></mark><mark><mark></mark><mark></mark></mark><mark><mark></mark><mark></mark></mark></p>
+</div>
+<div class="paragraph">
+<p>If you have a VPC/VNet that deploys applications that host Personal
+Information or PCI data and your compliance requires packet inspection,
+you can create a Security Domain where this VPC/VNet is attached.
+Specify a connection policy for this Security Domain to connect to the
+Firewall Domain. All packets to and from this VPC/VNet will be
+inspected.</p>
+</div>
+<div class="paragraph">
+<p>Example 2. Production VPC/VNets <mark><mark></mark><mark></mark></mark><mark><mark></mark><mark></mark></mark><mark><mark></mark></mark>#</p>
+</div>
+<div class="paragraph">
+<p>You may decide to inspect all traffic from the production data, which
+resides in multiple VPC/VNets. In this case you can create a Security
+Domain that all of these VPC/VNets are attached to. Then use connection
+policy to connect this domain to the firewall domain.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="what-are-the-limitations-of-firenet"><a class="anchor" href="#what-are-the-limitations-of-firenet"></a>What are the limitations of FireNet?</h3>
+<div class="paragraph">
+<p>You can have multiple Firewall Domains. However, a Security Domain
+cannot be connected to two Firewall Domains except the case when one is
+for Ingress/Egress and another is for East-West and North-South
+inspection.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="how-does-firenet-compare-with-ecmpvpn-based-firewall-deployment"><a class="anchor" href="#how-does-firenet-compare-with-ecmpvpn-based-firewall-deployment"></a>How does FireNet compare with ECMP/VPN based firewall deployment?</h3>
+<div class="paragraph">
+<p>AWS Transit Gateway (TGW) supports VPN with ECMP load balancing. With
+this capability, you can launch multiple firewall instances in a load
+balanced fashion for Egress Inspection and VPC/VNet to VPC/VNet traffic
+inspection.</p>
+</div>
+<div class="paragraph">
+<p>One problem with this deployment is performance. The IPsec tunnel limits
+each firewall instance to be capped at 1Gbps. When this architecture is
+deployed for VPC/VNet to VPC/VNet inspection, traffic goes through the
+VGW (the other end of the IPsec tunnel) twice, further reducing its
+throughput to 500Mbps. What this implies is that each firewall instance
+can only operate at 400Mbps throughput. This is much lower than what
+firewall instances can do without an IPsec tunnel.</p>
+</div>
+<div class="paragraph">
+<p>Another problem is that for east west traffic inspection, the firewall
+instance must NAT the source address, otherwise the return traffic is
+not guaranteed to go through the same firewall instance. This is because
+ECMP makes the independent decision of distributing the traffic of the
+firewall instances for each direction of the traffic.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="what-is-the-minimum-gateway-instance-size-for-firenet-deployment"><a class="anchor" href="#what-is-the-minimum-gateway-instance-size-for-firenet-deployment"></a>What is the minimum gateway instance size for FireNet deployment?</h3>
+<div class="paragraph">
+<p>The minimum gateway instance size is C5.xlarge. This is because the
+FireNet gateway requires 4 network interfaces:</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="ulist">
+<ul>
+<li>
+<p>eth0 as a management interface</p>
+</li>
+<li>
+<p>eth1 as a TGW interface</p>
+</li>
+<li>
+<p>eth2 as a firewall instance interface</p>
+</li>
+<li>
+<p>eth3 as the HA FireNet gateway interface</p>
+</li>
+</ul>
+</div>
+</blockquote>
+</div>
+<div class="paragraph">
+<p>The private interfaces on FireNet Gateway are described as below.</p>
+</div>
+<div class="paragraph">
+<p><span class="image unresolved"><img src="firewall_network_workflow_media/private_interfaces.png" alt="private_interfaces"></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="can-tgw-send-packets-to-both-firenet-gateways"><a class="anchor" href="#can-tgw-send-packets-to-both-firenet-gateways"></a>Can TGW send packets to both FireNet Gateways?</h3>
+<div class="paragraph">
+<p>Yes. Both primary and HA FireNet Gateways attach its eth1 ENI to TGW.
+When TGW forwards packets to the FireNet VPC/VNet, it applies AZ
+affinity in the best effort manner. That is, packets coming from a
+source VPC/VNet instance in AZ-a will be forwarded to the gateway whose
+ENI is in AZ-a.</p>
+</div>
+<div class="paragraph">
+<p>For example, two FireNet gateways, gateway-1 and gateway-2, one has eth1
+in AZ-a and the other is in AZ-b, respectively. In a healthy state, both
+gateways receive traffic from TGW. A Spoke VPC/VNet traffic from AZ-a
+will be forwarded to gateway-1 eth1 ENI for processing. Spoke VPC/VNet
+traffic from AZ-b will be forwarded to gateway-2 for processing.</p>
+</div>
+<div class="paragraph">
+<p>When gateway-1 goes down, the Controller detects the failure, and then
+the Controller reprograms the default route entry (0.0.0.0/0) of the
+route table that is associated with the gateway-1 eth1 subnet (with the
+name like -gw-tgw-ingress) to point to the ENI of eth1 of the gateway-2
+(its subnet should have a name like -gw-hagw-tgw-ingress), thus
+redirecting all AZ-a source traffic to the gateway in AZ-b.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="how-does-firenet-work"><a class="anchor" href="#how-does-firenet-work"></a>How does FireNet work?</h3>
+<div class="paragraph">
+<p>Take, for example, a VPC/VNet1 to VPC/VNet2 traffic inspection, where
+VPC/VNet1 and VPC/VNet2 are attached to the same TGW.</p>
+</div>
+<div class="paragraph">
+<p>As a packet from VPC/VNet1 arrives at the FireNet gateway via the TGW,
+it does a 4-tuple (source IP, destination IP, source port and
+destination port) hash calculation to decide if it should forward the
+packet to one of the associated firewall instances or forward to the HA
+FireNet gateway.</p>
+</div>
+<div class="paragraph">
+<p>If the hash calculation determines the firewall instance is associated
+with the HA FireNet gateway, it forwards the packet to the HA FireNet
+gateway through its eth3 interface.</p>
+</div>
+<div class="paragraph">
+<p>When the HA FireNet gateway receives the packet, it performs exactly the
+same hash calculation and decides which associated firewall instance it
+should forward the traffic to.</p>
+</div>
+<div class="paragraph">
+<p>The packet flow is illustrated in the diagram below:</p>
+</div>
+<div class="paragraph">
+<p><span class="image unresolved"><img src="firewall_network_faq_media/firenet_packet_flow.png" alt="firenet_packet_flow"></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="how-do-i-configure-firenet"><a class="anchor" href="#how-do-i-configure-firenet"></a>How do I configure FireNet?</h3>
+<div class="paragraph">
+<p>Follow the
+<a href="https://docs.aviatrix.com/HowTos/firewall_network_workflow.html">FireNet
+workflow</a> to deploy firewall in the cloud.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="how-do-i-enable-egress-inspection-on-firenet"><a class="anchor" href="#how-do-i-enable-egress-inspection-on-firenet"></a>How do I enable Egress inspection on FireNet?</h3>
+<div class="paragraph">
+<p>By default, FireNet inspects traffic between North South (on-prem and
+VPC/VNet) and East West (VPC/VNet to VPC/VNet). To enable Egress traffic
+(Internet bound) inspection:</p>
+</div>
+<div class="paragraph">
+<p>Go to Firewall Network &gt; Advanced. Click the skewer. Scroll down to
+Egress through Firewall and click <strong>Enable</strong>.</p>
+</div>
+<div class="paragraph">
+<p>Note for GCE instances: Any GCE instance (excluding Controller-created
+gateways) that needs to participate in egress control (FQDN, SNAT, and
+FW Egress) have to be tagged as "avx-snat-noip." The GCE network tag
+"avx-snat-noip" can be associated during GCE instance creation or by
+editing an existing instance.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="how-do-i-make-ingress-inspection-to-work-on-firenet"><a class="anchor" href="#how-do-i-make-ingress-inspection-to-work-on-firenet"></a>How do I make Ingress inspection to work on FireNet?</h3>
+<div class="paragraph">
+<p>If the FireNet deployment is for both Egress and Ingress traffic, you
+need to SNAT on the firewall instance to its LAN or Trusted Interface IP
+(eth2 interface). The rule is that for a source IP address that comes
+from NLB or a vendor load balancer such as F5 private IP address, it is
+translated to firewall interface eth2 private IP address.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="how-to-exclude-specific-cidrs-from-being-inspected-by-the-firewall"><a class="anchor" href="#how-to-exclude-specific-cidrs-from-being-inspected-by-the-firewall"></a>How to exclude specific CIDRs from being inspected by the firewall?</h3>
+<div class="paragraph">
+<p>By default, FireNet inspects all East-West (VPC/VNet to VPC/VNet)
+traffic but you may have an instance in the VPC/VNet which you do not
+want to be inspected. For example, the Aviatrix Controller deployed in
+the Shared Service VPC/VNet to be excluded from inspection while Shared
+Service VPC/VNet traffic is inspected. This improves the Controller
+reachability by not subjecting the Controller access to unintentional
+firewall policy errors.</p>
+</div>
+<div class="paragraph">
+<p>Go to Firewall Network &gt; Advanced and put the CIDRs in the field
+<strong>"Network List Excluded From East-West Inspection"</strong> to exclude from
+being inspected by the firewall.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1"><strong>Note:</strong></dt>
+<dd>
+<p>[arabic]</p>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Maximum 20 CIDRs coma-separated are supported.</p>
+</li>
+<li>
+<p>CIDRs are excluded from East-West inspections only.</p>
+</li>
+<li>
+<p>In AWS TGW FireNet, if Egress inspection is enabled, Egress traffic
+originated from an excluded CIDRs will be dropped. If excluded CIDRs
+needs to be inspected then use a separate FireNet for Egress Traffic
+and separate FireNet for East-West Traffic.</p>
+</li>
+</ol>
+</div>
+</dd>
+</dl>
+</div>
+</div>
+<div class="sect2">
+<h3 id="is-there-an-example-guide-to-setup-palo-alto-vm-series-policies"><a class="anchor" href="#is-there-an-example-guide-to-setup-palo-alto-vm-series-policies"></a>Is there an example guide to setup Palo Alto VM-Series policies?</h3>
+<div class="paragraph">
+<p>Yes. Follow
+<a href="https://docs.aviatrix.com/HowTos/config_paloaltoVM.html">Example Config
+for Palo Alto VM-Series</a> to setup an "ALLOW ALL" policy for test
+validation.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="how-do-i-test-firenet-connectivity-without-deploying-firewall-instance"><a class="anchor" href="#how-do-i-test-firenet-connectivity-without-deploying-firewall-instance"></a>How do I test FireNet connectivity without deploying firewall instance?</h3>
+<div class="paragraph">
+<p>You can test connectivity without deploying any firewall instances. When
+the FireNet gateway has no firewall instance attached to it for the data
+path, the FireNet gateway loops the received packet and forwards it to
+its destination.</p>
+</div>
+<div class="paragraph">
+<p>Follow the FireNet workflow to complete Steps 1, 2, 3, 4, 5, 6 and 8.</p>
+</div>
+<div class="paragraph">
+<p>If you have an instance in VPC/VNet/Domain and another instance in a
+different VPC/VNet/Domain, and you specify connection policy between the
+Domains and one Domain to connect to the Firewall Domain, then you
+should be able to ping the two instances.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="what-is-the-maximum-performance-firenet-can-achieve"><a class="anchor" href="#what-is-the-maximum-performance-firenet-can-achieve"></a>What is the maximum performance FireNet can achieve?</h3>
+<div class="paragraph">
+<p>For East-West (VPC/VNet to VPC/VNet) and North-South (on-prem to
+VPC/VNet) traffic inspection, FireNet achieves 40Gbps throughput with
+Jumbo frame size in AWS. Note the maximum TGW performance between two
+attached VPC/VNets is 50Gbps.</p>
+</div>
+<div class="paragraph">
+<p><span class="image unresolved"><img src="firewall_network_faq_media/firewall_network_perf.png" alt="firewall_network_perf"></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="are-there-any-design-patterns-for-firewall-network-deployment"><a class="anchor" href="#are-there-any-design-patterns-for-firewall-network-deployment"></a>Are there any design patterns for Firewall Network deployment?</h3>
+<div class="paragraph">
+<p>Yes, please refer to the
+<a href="https://docs.aviatrix.com/HowTos/firewall_network_design_patterns.html">Firewall
+Network Design Patterns.</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="can-vm-series-be-launched-with-bootstrap-integration"><a class="anchor" href="#can-vm-series-be-launched-with-bootstrap-integration"></a>Can VM-Series be launched with Bootstrap integration?</h3>
+<div class="paragraph">
+<p>Yes. When you launch a VM-Series from Aviatrix Controller console, you
+can select the option to launch the VM-Series instance with
+<a href="https://docs.aviatrix.com/HowTos/firewall_network_workflow.html#example-configuration-for-bootstrap">bootstrap
+information</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="can-firewall-network-work-with-panorama"><a class="anchor" href="#can-firewall-network-work-with-panorama"></a>Can Firewall Network work with Panorama?</h3>
+<div class="paragraph">
+<p>Yes. Follow the instructions for
+<a href="https://docs.aviatrix.com/HowTos/paloalto_API_setup.html#managing-vm-series-by-panorama">Panorama
+integration.</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="what-is-the-firenet-gateway-failover-time"><a class="anchor" href="#what-is-the-firenet-gateway-failover-time"></a>What is the FireNet gateway failover time?</h3>
+<div class="paragraph">
+<p>Aviatrix FireNet gateway failure detection time is 8 - 10 seconds. The
+switch over to alternative gateway (primary or backup) is about the same
+time.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="why-does-the-primary-gateway-send-packets-to-backup-gateway-instead-of-sending-to-firewall-directly"><a class="anchor" href="#why-does-the-primary-gateway-send-packets-to-backup-gateway-instead-of-sending-to-firewall-directly"></a>Why does the primary gateway send packets to backup gateway instead of sending to firewall directly?</h3>
+<div class="paragraph">
+<p>If the firewall instance is in the same AZ and on the same subnet with
+the primary gateway, packets are forwarded directly from the gateway to
+the firewall instance.</p>
+</div>
+<div class="paragraph">
+<p>However, if the firewall instance is in the different AZ and subnet,
+forwarding packets directly to the firewall instance requires AWS route
+table to be programmed with target as the firewall instance, and as a
+result, there cannot be more than one firewall instance in the different
+AZ, thus losing the scale out capability.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="does-aviatrix-controller-communicate-with-palo-alto-panorama-to-its-private-ip-address"><a class="anchor" href="#does-aviatrix-controller-communicate-with-palo-alto-panorama-to-its-private-ip-address"></a>Does Aviatrix Controller communicate with Palo Alto Panorama to its private IP address?</h3>
+<div class="paragraph">
+<p>Yes, if the Panorama is reachable via private IP.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="does-aviatrix-controller-check-the-health-of-panorama"><a class="anchor" href="#does-aviatrix-controller-check-the-health-of-panorama"></a>Does Aviatrix Controller check the health of Panorama?</h3>
+<div class="paragraph">
+<p>No. Aviatrix Controller only checks the health of VM-Series instances.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="how-does-aviatrix-controller-know-which-panorama-is-the-primary-one-if-there-are-two-cross-sites"><a class="anchor" href="#how-does-aviatrix-controller-know-which-panorama-is-the-primary-one-if-there-are-two-cross-sites"></a>How does Aviatrix Controller know which Panorama is the primary one if there are two cross sites?</h3>
+<div class="paragraph">
+<p>The primary IP address is configured at the
+<a href="https://docs.aviatrix.com/HowTos/paloalto_API_setup.html#managing-vm-series-by-panorama">Vendor
+Integration</a> function.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="aviatrix-firenet-security-groups"><a class="anchor" href="#aviatrix-firenet-security-groups"></a>Aviatrix FireNet Security Groups</h3>
+<div class="paragraph">
+<p>On firewall LAN interface.</p>
+</div>
+<div class="paragraph">
+<p>Eth2 on PAN; or Eth1 on Fortigate and Checkpoint. This interface accepts
+all data traffic to be inspected or going to the Internet (if egress is
+enabled). The traffic originates from an internal instance, which is
+destinated to another internal instance or the Internet. Therefore, it
+is OK to limit this SG to RFC1918 only. But if there are non-RFC1918
+CIDR’s inside your network, those may not work.</p>
+</div>
+<div class="paragraph">
+<p>On a FireNet gateway, there are 4 interfaces.</p>
+</div>
+<div class="paragraph">
+<p>Eth0: this interface is used for all Internet traffic (DNS, NTP, etc),
+communication with the Controller (TCP, SSH, etc), encrypted tunnels,
+etc. This interface is under the Aviatrix Controller’s control, it’s SG
+is already limited to the minimum. User should NOT change it. Even if
+user changes it, the Aviatrix Controller will always try to change back.</p>
+</div>
+<div class="paragraph">
+<p>Eth1: this interface is used to send/receive traffic to AWS TGW. It
+accepts data traffic from TGW, so it is OK to limit SG to RFC1918 only.</p>
+</div>
+<div class="paragraph">
+<p>Eth2: this interface is used to send/receive traffic to firewalls
+(through firewall’s LAN interface), so it expects traffic originated
+from both internal and external. It might be OK to limit to RFC1918
+since AWS SG is stateful.</p>
+</div>
+<div class="paragraph">
+<p>Eth3: this interface is used to exchange traffic between primary and
+backup gateway, this is part of our uniform hashing algorithm. Like
+eth2, it expects traffic originated from both internal and external. It
+might be OK to limit to RFC1918, since AWS SG is stateful.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="what-are-the-integration-points-with-fortinet-firewall"><a class="anchor" href="#what-are-the-integration-points-with-fortinet-firewall"></a>What are the integration points with Fortinet firewall?</h3>
+<div class="quoteblock">
+<blockquote>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Managing Life Cycle of Fortinet firewall instances</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Aviatrix Controller launches and deletes Fortinet firewall instances.</p>
+</li>
+<li>
+<p>Supports
+<a href="https://docs.aviatrix.com/HowTos/fortigate_bootstrap_example.html">Fortinet
+Bootstrap mechanism</a> to simplifying firewall instance launching and
+preload any firewall configurations.</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Managing Fortinet firewall instances pool</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>The Aviatrix Controller monitors individual firewall health by
+periodically pining the LAN interface of each firewall instances. Ping
+period is every 5 second with a 20ms ping time out. The failure
+detection is maximum 5 seconds and 40ms. The Aviatrix Controller
+automatically detaches a unhealthy firewall instance. When the firewall
+instance is reachable again, it automatically attaches it back to the
+pool.</p>
+</li>
+<li>
+<p>You can initiate a new firewall instance to be launched and attached
+to pool at any given time.</p>
+</li>
+<li>
+<p>You can initiate to remove a firewall instance from the pool at any
+given time.</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Static Route Configuration</p>
+<div class="paragraph">
+<p>Currently there is no API integration to automatically populate Fortinet
+route table entries. Customer needs to configure these entries. We
+recommend configuring the 3 RFC 1918 routes to point to the firewall LAN
+interface. For FireNet deployment, the RFC 1918 routes should point to
+the LAN interface subnet cloud provider&#8217;s default gateways. For Transit
+FireNet deployment, the RFC 1918 routes should point to the FireNet
+Gateway LAN interface IP, as shown in this
+<a href="https://docs.aviatrix.com/HowTos/config_FortiGateVM.html#configure-fortigate-next-generation-firewall-port1-with-wan">example.</a>.</p>
+</div>
+</li>
+</ol>
+</div>
+</blockquote>
+</div>
+</div>
+<div class="sect2">
+<h3 id="what-is-intra-domain-inspection"><a class="anchor" href="#what-is-intra-domain-inspection"></a>What is Intra Domain inspection?</h3>
+<div class="paragraph">
+<p>Intra Domain inspection allows traffic between VPC/VNets in the same
+Security Domain to be redirected to Firewall Domain for inspection
+before reaching to the destination.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="how-to-migrate-from-firenet-to-firenet-with-aws-gwlb-or-vice-versa"><a class="anchor" href="#how-to-migrate-from-firenet-to-firenet-with-aws-gwlb-or-vice-versa"></a>How to migrate from FireNet to FireNet with AWS GWLB or vice versa?</h3>
+<div class="paragraph">
+<p>Starting from Release 6.3, Multi-Cloud Transit FireNet added support for
+AWS Gateway Load Balancer (GWLB). The key advantage of this integration
+is to allow firewalls to be scaled up and down without affecting
+established sessions (except sessions associated with the failed
+firewalls).</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Save firewall configuration.</p>
+</li>
+<li>
+<p>Disassociate firewall instance &gt; Go to Aviatrix Controller &gt; Firewall
+Network &gt; Setup &gt; Step 10.</p>
+</li>
+<li>
+<p>Delete firewall instance &gt; Go to Aviatrix Controller &gt; Firewall
+Network &gt; Setup &gt; Step 7a.</p>
+</li>
+<li>
+<p>Disable FireNet function &gt; Go to Aviatrix Controller &gt; Firewall
+Network &gt; Step 11a to disable Aviatrix Gateway FireNet Function.</p>
+</li>
+<li>
+<p>Enable Transit FireNet function &gt; Go to Aviatrix Controller &gt; Firewall
+Network &gt; Step 5a to enable the Aviatrix Gateway for FireNet Function.
+Mark the <strong>Use AWS GWLB</strong> checkbox if migrating from Aviatrix FireNet to
+FireNet with AWS GWLB.</p>
+</li>
+<li>
+<p>Launch and associate firewall &gt; Go to Aviatrix Controller &gt; Firewall
+Network &gt; Step 7a.</p>
+</li>
+<li>
+<p>Restore firewall configuration.</p>
+</li>
+</ol>
+</div>
+</blockquote>
+</div>
+</div>
+<div class="sect2">
+<h3 id="can-we-migrate-from-firenet-solution-to-native-firenet-with-gwlb-solution"><a class="anchor" href="#can-we-migrate-from-firenet-solution-to-native-firenet-with-gwlb-solution"></a>Can we migrate from FireNet solution to Native FireNet with GWLB solution ?</h3>
+<div class="paragraph">
+<p>Native FireNet refers to a deployment scenario where Aviatrix FireNet
+gateways are not deployed.</p>
+</div>
+<div class="paragraph">
+<p>To migrate, use the following steps for migration:</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Save the firewall configuration.</p>
+</li>
+<li>
+<p>Disassociate firewall instance &gt; Go to Aviatrix Controller &gt; Firewall
+Network &gt; Setup &gt; Step 10.</p>
+</li>
+<li>
+<p>Delete firewall instance &gt; Go to Aviatrix Controller &gt; Firewall
+Network &gt; Setup &gt; Step 7a.</p>
+</li>
+<li>
+<p>Disable FireNet function &gt; Go to Aviatrix Controller &gt; Firewall
+Network &gt; Step 11a to disable Aviatrix Gateway FireNet Function.</p>
+</li>
+<li>
+<p>Delete Transit FireNet Gateway.</p>
+</li>
+<li>
+<p>Enable Transit FireNet function &gt; Go to Aviatrix Controller &gt; Firewall
+Network &gt; Step 5b to enable the Native AWS GWLB for FireNet Function.</p>
+</li>
+<li>
+<p>Launch and associate firewall &gt; Go to Aviatrix Controller &gt; Firewall
+Network &gt; Step 7a.</p>
+</li>
+<li>
+<p>Restore firewall configuration.</p>
+</li>
+</ol>
+</div>
+</blockquote>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../../_/js/site.js"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

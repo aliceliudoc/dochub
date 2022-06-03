@@ -1,0 +1,57 @@
+= This is a new title
+== In asciidoc Tile = Heading level one
+
+.Title
+****Title
+****
+
+****
+ Head one over here
+In asciidoc Head 1 = Heading Level two
+
+== Head two over here
+
+How about some text to descibe what's next. Can we make a table without going crazy?
+
+
+.Table Title
+[width="100%",options="header,footer"]
+|====================
+| Is long text OK? | Text? | Text? | Text? 
+| Text? | Do I really need to allign the source textx? | Text? | Text? 
+| Text? | Text? | Text? | Text? 
+| _It looks a bit sloppy in the source..._ | Text? | Text? | Text? 
+| Text? | Text? | Text? | *But nothing appears to break in the display!* 
+| Text? | Text? | Text? | Text? 
+|====================
+
+[quote,Rūmī]
+____
+Patience is the key to joy.
+____
+
+
+==== New Heading 4
+
+
+* List List List List List^3^
+** List List List List List~4~
+*** List List List List List 
+* List List  List List List 
+* List List List List LiList List List 
+
+. List List List List List 
+. List List List List List 
+.. List List List List Li
+[width="100%",options="header,footer"]
+|====================
+|  
+|====================st 
+... List List List List List
+. List List List List List 
+
+[source,]
+----
+ Code Code Code Code Code Code Code Code Code Code Code 
+Code Code Code Code Code Code Code Code Code Code Code Code Code 
+----

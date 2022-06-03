@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Untitled :: Antora doc web test Site</title>
+    <link rel="canonical" href="https://github.com/aliceliudoc/docweb.git/docdemo/v1.2/ingress-firewall/firewall-ingress-nlb-aws.html">
+    <meta name="generator" content="Antora 3.0.0">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <script>var uiRootPath = '../../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://github.com/aliceliudoc/docweb.git">Antora doc web test Site</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="docdemo" data-version="v1.2">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../copilot-cloud-index.html">Aviatrix demo doc</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../firewall-ingress-index.html">Ingress Firewall Setup Solution</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../firewall-ingress-prequesities.html">firewall-ingress-prequesities.adoc</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../firewall-avxTransit-Vnet.html">Ingress Firewall Setup Solution</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../firewall-transitSpoke-Vnet.html">firewall-transitSpoke-Vnet.adoc</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../firewall-application-SpokeVnet.html">firewall-application-SpokeVnet.adoc</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../firewall-azure-SpokeVnet.html">firewall-azure-SpokeVnet.adoc</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Aviatrix demo doc</span>
+    <span class="version">v1.2</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <a class="title" href="../../../cloud-based/v2.0/copilot-cloud-index.html">Aviatrix cloud deployments doc</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../cloud-based/v2.0/copilot-cloud-index.html">v2.0</a>
+        </li>
+        <li class="version">
+          <a href="../../../cloud-based/v1.0/copilot-cloud-index.html">v1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../demo/v1.0/copilot-cloud-index.html">Aviatrix demo deployments doc</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../demo/v1.0/copilot-cloud-index.html">v1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <a class="title" href="../copilot-cloud-index.html">Aviatrix demo doc</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../copilot-cloud-index.html">v1.2</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../index/v3.0/index.html">Aviatrix web doc</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../index/v3.0/index.html">v3.0</a>
+        </li>
+        <li class="version">
+          <a href="../../../index/v2.0/index.html">v2.0</a>
+        </li>
+        <li class="version">
+          <a href="../../../index/v1.0/index.html">v1.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../../index/v3.0/index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<div class="sect3">
+<h4 id="4-2-using-aws-nlb"><a class="anchor" href="#4-2-using-aws-nlb"></a>4.2 Using AWS NLB</h4>
+<div class="paragraph">
+<p>When NLB uses IP address as target group, the client IP address of the
+packet reaching to the application is one of the NLB node private IP
+address. If you like to get the original client IP address, you need to
+enable function
+<a href="https://docs.aws.amazon.com/elasticloadbalancing/latest/network/load-balancer-target-groups.html#target-group-attributes">proxy_protocol_v2.enabled
+under Target Group Attributes</a> on the NLB. Review the section "Enable
+Proxy Protocol" in the above AWS document or follow the same steps as
+below to enable this function on NLB using the AWS console.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Open the Amazon EC2 console at <a href="https://console.aws.amazon.com/ec2/" class="bare">https://console.aws.amazon.com/ec2/</a>.</p>
+</li>
+<li>
+<p>On the navigation pane, under Load Balancing, select <strong>Target Groups</strong>.</p>
+</li>
+<li>
+<p>Select the target group.</p>
+</li>
+<li>
+<p>Choose Description &gt; Edit attributes.</p>
+</li>
+<li>
+<p>Select <strong>Enable proxy protocol v2</strong>, and then click <strong>Save</strong>.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Also, you need to configure/support Proxy Protocol feature on your web
+server to retrieve the client original IP address. Please follow the
+steps below which are referring to the AWS document
+<a href="https://aws.amazon.com/premiumsupport/knowledge-center/elb-capture-client-ip-addresses/">How
+do I capture client IP addresses in my ELB access logs?</a>.</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="ulist">
+<ul>
+<li>
+<p>Take Apache/2.4.41 (Ubuntu) for example.</p>
+</li>
+<li>
+<p>Find and open Apache configuration file.</p>
+</li>
+</ul>
+</div>
+</blockquote>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>/etc/apache2/apache2.conf</pre>
+</div>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="ulist">
+<ul>
+<li>
+<p>Edit/add remoteip module configuration into Apache configuration file
+as below:</p>
+</li>
+</ul>
+</div>
+</blockquote>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>LoadModule remoteip_module /usr/lib/apache2/modules/mod_remoteip.so</pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://httpd.apache.org/docs/2.4/mod/mod_remoteip.html" class="bare">https://httpd.apache.org/docs/2.4/mod/mod_remoteip.html</a></p>
+</li>
+<li>
+<p><a href="https://httpd.apache.org/docs/2.4/mod/mod_remoteip.html#remoteipproxyprotocol" class="bare">https://httpd.apache.org/docs/2.4/mod/mod_remoteip.html#remoteipproxyprotocol</a></p>
+</li>
+</ul>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="ulist">
+<ul>
+<li>
+<p>Confirm that the mod_remoteip module loads by issuing command as below</p>
+</li>
+</ul>
+</div>
+</blockquote>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>$sudo apachectl -t -D DUMP_MODULES | grep -i remoteip</pre>
+</div>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="ulist">
+<ul>
+<li>
+<p>Review the output and verify that it contains a line similar to:</p>
+</li>
+</ul>
+</div>
+</blockquote>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>remoteip_module (shared)</pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Notes: If you are not able to view the prompt message, please make
+sure that your apache version support that module or attempt to load
+that module into the apache configuration.</p>
+</li>
+</ul>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="ulist">
+<ul>
+<li>
+<p>Configure the following line to your Apache configuration file (take
+/etc/apache2/sites-available/000-default.conf for example) to enable
+Proxy Protocol support.</p>
+</li>
+</ul>
+</div>
+</blockquote>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>RemoteIPProxyProtocol On</pre>
+</div>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="ulist">
+<ul>
+<li>
+<p>To view client IP address in the access log, edit/add commands into
+LogFormat section as below:</p>
+</li>
+</ul>
+</div>
+</blockquote>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>LogFormat "%h %p %a %{remote}p %l %u %t \"%r\" %&gt;s %b \"%{Referer}i\" \"%{User-Agent}i\"" combined</pre>
+</div>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="ulist">
+<ul>
+<li>
+<p>Save the changes</p>
+</li>
+<li>
+<p>Reload the Apache service by issuing command.</p>
+</li>
+</ul>
+</div>
+</blockquote>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>#systemctl reload apache2</pre>
+</div>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="ulist">
+<ul>
+<li>
+<p>Open the Apache access logs on your Apache server.</p>
+</li>
+<li>
+<p>Verify that client IP addresses are now recorded under the
+X-Forwarded-For header.</p>
+</li>
+<li>
+<p>Notes:</p>
+</li>
+</ul>
+</div>
+</blockquote>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Commands and file location varies by configuration</p>
+</li>
+<li>
+<p>For other OSs and web services, please find detail in the document
+<a href="https://aws.amazon.com/premiumsupport/knowledge-center/elb-capture-client-ip-addresses/">How
+do I capture client IP addresses in my ELB access logs?</a></p>
+</li>
+</ul>
+</div>
+<div class="quoteblock">
+<blockquote>
+
+</blockquote>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../../_/js/site.js"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

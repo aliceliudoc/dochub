@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Untitled :: Antora doc web test Site</title>
+    <link rel="canonical" href="https://github.com/aliceliudoc/docweb.git/docdemo/v1.2/ingress-firewall/firewall-network-design-patterns%20copy.html">
+    <meta name="generator" content="Antora 3.0.0">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <script>var uiRootPath = '../../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://github.com/aliceliudoc/docweb.git">Antora doc web test Site</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="docdemo" data-version="v1.2">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../copilot-cloud-index.html">Aviatrix demo doc</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../firewall-ingress-index.html">Ingress Firewall Setup Solution</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../firewall-ingress-prequesities.html">firewall-ingress-prequesities.adoc</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../firewall-avxTransit-Vnet.html">Ingress Firewall Setup Solution</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../firewall-transitSpoke-Vnet.html">firewall-transitSpoke-Vnet.adoc</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../firewall-application-SpokeVnet.html">firewall-application-SpokeVnet.adoc</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../firewall-azure-SpokeVnet.html">firewall-azure-SpokeVnet.adoc</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Aviatrix demo doc</span>
+    <span class="version">v1.2</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <a class="title" href="../../../cloud-based/v2.0/copilot-cloud-index.html">Aviatrix cloud deployments doc</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../cloud-based/v2.0/copilot-cloud-index.html">v2.0</a>
+        </li>
+        <li class="version">
+          <a href="../../../cloud-based/v1.0/copilot-cloud-index.html">v1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../demo/v1.0/copilot-cloud-index.html">Aviatrix demo deployments doc</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../demo/v1.0/copilot-cloud-index.html">v1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <a class="title" href="../copilot-cloud-index.html">Aviatrix demo doc</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../copilot-cloud-index.html">v1.2</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../index/v3.0/index.html">Aviatrix web doc</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../index/v3.0/index.html">v3.0</a>
+        </li>
+        <li class="version">
+          <a href="../../../index/v2.0/index.html">v2.0</a>
+        </li>
+        <li class="version">
+          <a href="../../../index/v1.0/index.html">v1.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../../index/v3.0/index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<div class="sect1">
+<h2 id="firewall-network-design-patterns"><a class="anchor" href="#firewall-network-design-patterns"></a>Firewall Network Design Patterns</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="1-hybrid-with-tgw"><a class="anchor" href="#1-hybrid-with-tgw"></a>1. Hybrid with TGW</h3>
+<div class="paragraph">
+<p>FireNet supports AWS Transit Gateway (TGW), as shown below.</p>
+</div>
+<div class="paragraph">
+<p><span class="image unresolved"><img src="firewall_network_media/firenet_transit.png" alt="firenet_transit"></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="2-hybrid-with-insane-mode"><a class="anchor" href="#2-hybrid-with-insane-mode"></a>2. Hybrid with Insane Mode</h3>
+<div class="paragraph">
+<p>FireNet supports AWS Transit (TGW) with Insane Mode,</p>
+</div>
+<div class="paragraph">
+<p><span class="image unresolved"><img src="firewall_network_media/firenet_insane.png" alt="firenet_insane"></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="3-native-tgw-integration"><a class="anchor" href="#3-native-tgw-integration"></a>3. Native TGW integration</h3>
+<div class="paragraph">
+<p>In the Release 4.6, the hybrid deployment can be using native AWS Direct
+Connect Gateway.</p>
+</div>
+<div class="paragraph">
+<p><span class="image unresolved"><img src="firewall_network_media/firenet.png" alt="firenet"></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="4-multi-region-transit-with-native-tgw-integration"><a class="anchor" href="#4-multi-region-transit-with-native-tgw-integration"></a>4. Multi Region Transit with Native TGW integration</h3>
+<div class="paragraph">
+<p>Connect to on-prem with AWS DXGW and use Aviatrix Edge gateway to
+connect to multiple regions.</p>
+</div>
+<div class="paragraph">
+<p><span class="image unresolved"><img src="firewall_network_faq_media/multi_region_firewall.png" alt="multi_region_firewall"></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="5-multi-region-transit-with-aviatrix-edge"><a class="anchor" href="#5-multi-region-transit-with-aviatrix-edge"></a>5. Multi-Region Transit with Aviatrix Edge</h3>
+<div class="paragraph">
+<p>Connect to on-prem with an Aviatrix Edge gateway for both hybrid and
+multi-regions.</p>
+</div>
+<div class="paragraph">
+<p><span class="image unresolved"><img src="firewall_network_faq_media/multi_region_aviatrix_edge.png" alt="multi_region_aviatrix_edge"></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="6-two-firewall-networks"><a class="anchor" href="#6-two-firewall-networks"></a>6. Two Firewall Networks</h3>
+<div class="paragraph">
+<p>You can deploy two Firewall Networks, one dedicated for VPC-to-VPC
+traffic inspection and another for egress inspection.</p>
+</div>
+<div class="paragraph">
+<p>Note you must follow the configuration sequence below:</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Disable the Traffic Inspection of the FireNet domain intended for
+Egress control.</p>
+</li>
+<li>
+<p>Enable Egress Control for FireNet domain intended for Egress control.</p>
+</li>
+<li>
+<p>Build connection policies.</p>
+</li>
+</ol>
+</div>
+</blockquote>
+</div>
+<div class="paragraph">
+<p><span class="image unresolved"><img src="firewall_network_faq_media/multi_firewall.png" alt="multi_firewall"></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="7-ingress-traffic-inspection"><a class="anchor" href="#7-ingress-traffic-inspection"></a>7. Ingress Traffic Inspection</h3>
+<div class="paragraph">
+<p>Follow the
+<a href="https://docs.aviatrix.com/HowTos/ingress_firewall_example.html">Ingress
+firewall instructions</a> to deploy the solution for Ingress traffic
+inspection.</p>
+</div>
+<div class="paragraph">
+<p><span class="image unresolved"><img src="ingress_firewall_example_media/ingress_firewall.png" alt="ingress_firewall"></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="8-aviatrix-fqdn-in-firenet-for-egress-control"><a class="anchor" href="#8-aviatrix-fqdn-in-firenet-for-egress-control"></a>8. Aviatrix FQDN in FireNet for Egress Control</h3>
+<div class="paragraph">
+<p>When Aviatrix FQDN gateway is deployed in a VPC, it uses a public IP
+address to perform both whitelisting and NAT function for Internet bound
+traffic. Sometimes these Internet bound traffic are partner API calls
+and these partners require to limit the number of IP addresses for each
+customer of theirs. In such situation, you can deploy FQDN in a
+centralized manner as shown in the diagram below.</p>
+</div>
+<div class="paragraph">
+<p><span class="image unresolved"><img src="firewall_network_workflow_media/fqdn_in_firenet.png" alt="fqdn_in_firenet"></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="9-ingress-directly-through-firewall"><a class="anchor" href="#9-ingress-directly-through-firewall"></a>9. Ingress Directly through Firewall</h3>
+<div class="paragraph">
+<p>Another often configured Ingress Egress design pattern is to have the
+traffic forward to firewall instances directly as shown in the diagram
+below. In this design pattern, each firewall instance must configure
+SNAT on its LAN interface that connects to the Aviatrix FireNet gateway.
+The draw back of this design is source IP address is not preserved when
+traffic reaches the application. If you need to preserve source IP
+address, refer to
+<a href="https://docs.aviatrix.com/HowTos/firewall_network_design_patterns.html#ingress-traffic-inspection">this
+recommended design for Ingress</a>.</p>
+</div>
+<div class="paragraph">
+<p><span class="image unresolved"><img src="firewall_network_faq_media/firenet_ingress_egress.png" alt="firenet_ingress_egress"></span></p>
+</div>
+<div class="paragraph">
+<p>For more information, follow the
+<a href="https://docs.aviatrix.com/HowTos/firewall_network_workflow.html#firewall-network-firenet-workflow">FireNet
+workflow</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="10-central-egress-in-a-multi-region-deployment"><a class="anchor" href="#10-central-egress-in-a-multi-region-deployment"></a>10. Central Egress in a Multi-Region Deployment</h3>
+<div class="paragraph">
+<p>Since the default routes are propagated over the Aviatrix Transit
+Gateway peering, you can consolidate the Internet bound egress traffic
+to the firewalls in one region, as shown in the diagram below.</p>
+</div>
+<div class="paragraph">
+<p><span class="image unresolved"><img src="firewall_network_media/central_egress.png" alt="central_egress"></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="11-distributed-egress-in-a-multi-region-deployment"><a class="anchor" href="#11-distributed-egress-in-a-multi-region-deployment"></a>11. Distributed Egress in a Multi Region Deployment</h3>
+<div class="paragraph">
+<p>If you need to have a distributed egress for each region, make sure you
+filter out the default route 0.0.0.0/0 when you build the Aviatrix
+Transit Gateway peering, as shown in the diagram below.</p>
+</div>
+<div class="paragraph">
+<p><span class="image unresolved"><img src="firewall_network_media/multi_egress.png" alt="multi_egress"></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="12-ingress-protection-via-aviatrix-transit-firenet"><a class="anchor" href="#12-ingress-protection-via-aviatrix-transit-firenet"></a>12. Ingress Protection via Aviatrix Transit FireNet</h3>
+<div class="paragraph">
+<p>This Ingress Protection design pattern is to have the traffic forward to
+firewall instances directly in Aviatrix Transit FireNet VPC as shown in
+the diagram below. In this design pattern, each firewall instance must
+configure (1) SNAT on its LAN interface that connects to the Aviatrix
+FireNet gateway and (2) DNAT to the IP of application server/load
+balancer. The draw back of this design is source IP address is not
+preserved when traffic reaches the application.</p>
+</div>
+<div class="paragraph">
+<p>For an example configuration workflow, check out
+<a href="https://docs.aviatrix.com/HowTos/Ingress_Protection_Transit_FireNet_Fortigate.html">Ingress
+Protection via Aviatrix Transit FireNet with Fortigate</a>.</p>
+</div>
+<div class="paragraph">
+<p><span class="image unresolved"><img src="ingress_firewall_example_media/Ingress_Aviatrix_Transit_FireNet_topology.png" alt="transit_firenet_ingress"></span></p>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../../_/js/site.js"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

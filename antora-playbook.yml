@@ -31,5 +31,6 @@ asciidoc:
     page-partial: false
 ui:
   bundle:
-    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
+    # url:https://deploy-preview-123--asciidoctor-docs-ui.netlify.app/dist/ui-bundle.zip
+    url: https://github.com/aliceliudoc/asciidoctor-docs-ui/releases/download/test-v1.0.0/ui-bundle.zip
     snapshot: true

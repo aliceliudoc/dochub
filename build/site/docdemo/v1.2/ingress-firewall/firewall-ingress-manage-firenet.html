@@ -8,10 +8,10 @@
     <meta name="generator" content="Antora 3.0.0">
     <link rel="canonical" href="https://github.com/aliceliudoc/docweb.git/docdemo/v1.2/ingress-firewall/firewall-ingress-manage-firenet.html">
     <meta property="og:url" content="https://github.com/aliceliudoc/docweb.git/docdemo/v1.2/ingress-firewall/firewall-ingress-manage-firenet.html">
-    <meta property="og:description" content="A documentation page for Aviatrix demo doc.">
+    <meta property="og:description" content="A documentation page for Aviatrix demo doc with new TOC.">
     <meta property="og:site_name" content="Asciidoctor Docs">
     <meta name="twitter:card" content="summary_large_image">
-    <meta property="og:title" content="Aviatrix demo doc - ">
+    <meta property="og:title" content="Aviatrix demo doc with new TOC - ">
     <meta property="og:image" content="https://github.com/aliceliudoc/docweb.git/_/img/asciidoctor-og.png">
     <meta name="twitter:site" content="@asciidoctor">
     <meta name="page-spec" content="docdemo::ingress-firewall/firewall-ingress-manage-firenet.adoc">
@@ -53,7 +53,7 @@
 <div class="nav-panel-menu is-active is-loading" data-panel="menu">
   <nav class="nav-menu">
     <button class="nav-menu-toggle" title="Toggle expand/collapse all"></button>
-    <h3 class="title"><a href="../copilot-cloud-index.html">Aviatrix demo doc</a></h3>
+    <h3 class="title"><a href="../firewall-ingress-index.html">Aviatrix demo doc with new TOC</a></h3>
 <ul class="nav-list">
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
@@ -116,7 +116,7 @@
 </div>
 <div class="nav-panel-explore" data-panel="explore">
   <div class="context">
-    <span class="title">Aviatrix demo doc</span>
+    <span class="title">Aviatrix demo doc with new TOC</span>
     <span class="version">v1.2</span>
   </div>
   <ul class="components">
@@ -140,10 +140,10 @@
       </ul>
     </li>
     <li class="component is-current">
-      <a class="title" href="../copilot-cloud-index.html">Aviatrix demo doc</a>
+      <a class="title" href="../firewall-ingress-index.html">Aviatrix demo doc with new TOC</a>
       <ul class="versions">
         <li class="version is-current is-latest">
-          <a href="../copilot-cloud-index.html">v1.2</a>
+          <a href="../firewall-ingress-index.html">v1.2</a>
         </li>
       </ul>
     </li>
@@ -193,8 +193,10 @@ Transit FireNet Policy</a> as the following screenshot.</p>
 </li>
 </ul>
 </div>
-<div class="paragraph">
-<p><span class="image"><img src="../_images/images/azure-manage-firenet-policy.png" alt="azure_avx_manage_firenet_policy"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/images/azure-manage-firenet-policy.png" alt="azure_avx_manage_firenet_policy">
+</div>
 </div>
 <div class="ulist">
 <ul>
@@ -256,8 +258,10 @@ not accepted.</p></td>
 </tr>
 </tbody>
 </table>
-<div class="paragraph">
-<p><span class="image"><img src="../_images/images/azure-avx-deploy-firewall.png" alt="azure_avx_deploy_firewall"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/images/azure-avx-deploy-firewall.png" alt="azure_avx_deploy_firewall">
+</div>
 </div>
 <div class="quoteblock">
 <blockquote>
@@ -348,8 +352,10 @@ you select the following:</p>
 <ol class="arabic">
 <li>
 <p>Create an Azure Application Gateway in Ingress Spoke VNET.</p>
-<div class="paragraph">
-<p><span class="image"><img src="../_images/images/azure-application-gw-creation.png" alt="azure_application_gw_creation"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/images/azure-application-gw-creation.png" alt="azure_application_gw_creation">
+</div>
 </div>
 </li>
 <li>
@@ -361,8 +367,10 @@ you select the following:</p>
 <li>
 <p>Select "IP address or hostname" for Target type and configure the
 private IP of Apache2 Web Server for Target in section Backends.</p>
-<div class="paragraph">
-<p><span class="image"><img src="../_images/images/azure-application-gw-backend.png" alt="azure_application_gw_backend"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/images/azure-application-gw-backend.png" alt="azure_application_gw_backend">
+</div>
 </div>
 </li>
 <li>
@@ -388,22 +396,28 @@ private IP of Apache2 Web Server for Target in section Backends.</p>
 </li>
 </ol>
 </div>
-<div class="paragraph">
-<p><span class="image"><img src="../_images/images/azure-gw-routing-rule-listener.png" alt="azure_application_gw_routing_rule_listener"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/images/azure-gw-routing-rule-listener.png" alt="azure_application_gw_routing_rule_listener">
+</div>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
 <p>Add a routing rule on Backend targets and create a HTTP setting
 depending on your requirement.</p>
-<div class="paragraph">
-<p><span class="image"><img src="../_images/images/azure-gw-rule-target.png" alt="azure_application_gw_routing_rule_backend_target"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/images/azure-gw-rule-target.png" alt="azure_application_gw_routing_rule_backend_target">
+</div>
 </div>
 </li>
 <li>
 <p>Click <strong>Create new</strong> on HTTP settings.</p>
-<div class="paragraph">
-<p><span class="image"><img src="../_images/images/azure-gw-rule-setting.png" alt="azure_application_gw_routing_rule_http_setting"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/images/azure-gw-rule-setting.png" alt="azure_application_gw_routing_rule_http_setting">
+</div>
 </div>
 </li>
 </ol>
@@ -426,8 +440,10 @@ depending on your requirement.</p>
 </tr>
 </tbody>
 </table>
-<div class="paragraph">
-<p><span class="image"><img src="../_images/images/azure-gw-rule-backendtwo.png" alt="azure_application_gw_routing_rule_backend_target_02"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/images/azure-gw-rule-backendtwo.png" alt="azure_application_gw_routing_rule_backend_target_02">
+</div>
 </div>
 <div class="quoteblock">
 <blockquote>
@@ -463,8 +479,10 @@ Direct web traffic with Azure Application Gateway - Azure portal</a>.</p>
 <p>Make sure Server (backend pool) status is in Healthy state from the
 Azure portal page Application Gateway &gt; Backend health.</p>
 </div>
-<div class="paragraph">
-<p><span class="image"><img src="../_images/images/azure-gw-health-check.png" alt="azure_application_gw_health_check"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/images/azure-gw-health-check.png" alt="azure_application_gw_health_check">
+</div>
 </div>
 <div class="paragraph">
 <p>Run a http request targeting on the Azure Application Gateway Public IP
@@ -475,21 +493,27 @@ or DNS name.</p>
 <li>
 <p>Find the Frontend public IP address of Azure Application Gateway from
 the Azure portal page Application Gateway &gt; Overview.</p>
-<div class="paragraph">
-<p><span class="image"><img src="../_images/images/azure-gw-public-ip.png" alt="azure_application_gw_frontend_public_IP"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/images/azure-gw-public-ip.png" alt="azure_application_gw_frontend_public_IP">
+</div>
 </div>
 </li>
 <li>
 <p>Copy the Frontend public IP address of Azure Application Gateway and
 paste it on a browser from your laptop/PC.</p>
-<div class="paragraph">
-<p><span class="image"><img src="../_images/images/azure-browser.png" alt="azure_browser"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/images/azure-browser.png" alt="azure_browser">
+</div>
 </div>
 </li>
 <li>
 <p>Perform tcpdump with port 8080 on Apache2 Web server.</p>
-<div class="paragraph">
-<p><span class="image"><img src="../_images/images/azure-server-tcpdump.png" alt="azure_application_server_tcpdump"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/images/azure-server-tcpdump.png" alt="azure_application_server_tcpdump">
+</div>
 </div>
 </li>
 <li>
@@ -497,8 +521,10 @@ paste it on a browser from your laptop/PC.</p>
 original IP address in the HTTP header field "X-Forwarded-For (XFF)".
 Here is an HTTP packet example which is opened with Wireshark tool for
 your reference:</p>
-<div class="paragraph">
-<p><span class="image"><img src="../_images/images/azure-server-wireshark.png" alt="azure_application_server_wireshark"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/images/azure-server-wireshark.png" alt="azure_application_server_wireshark">
+</div>
 </div>
 </li>
 </ul>
@@ -582,8 +608,10 @@ LogFormat "%h %l %u %t \"%r\" %&gt;s %b" common
 </li>
 </ol>
 </div>
-<div class="paragraph">
-<p><span class="image"><img src="../_images/images/azure-server-apache-accesslog.png" alt="azure_application_server_apache2_accesslog"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/images/azure-server-apache-accesslog.png" alt="azure_application_server_apache2_accesslog">
+</div>
 </div>
 </blockquote>
 </div>

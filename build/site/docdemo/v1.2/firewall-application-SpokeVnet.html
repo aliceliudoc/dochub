@@ -8,10 +8,10 @@
     <meta name="generator" content="Antora 3.0.0">
     <link rel="canonical" href="https://github.com/aliceliudoc/docweb.git/docdemo/v1.2/firewall-application-SpokeVnet.html">
     <meta property="og:url" content="https://github.com/aliceliudoc/docweb.git/docdemo/v1.2/firewall-application-SpokeVnet.html">
-    <meta property="og:description" content="A documentation page for Aviatrix demo doc.">
+    <meta property="og:description" content="A documentation page for Aviatrix demo doc with new TOC.">
     <meta property="og:site_name" content="Asciidoctor Docs">
     <meta name="twitter:card" content="summary_large_image">
-    <meta property="og:title" content="Aviatrix demo doc - ">
+    <meta property="og:title" content="Aviatrix demo doc with new TOC - ">
     <meta property="og:image" content="https://github.com/aliceliudoc/docweb.git/_/img/asciidoctor-og.png">
     <meta name="twitter:site" content="@asciidoctor">
     <link rel="prev" href="firewall-transitSpoke-Vnet.html">
@@ -55,7 +55,7 @@
 <div class="nav-panel-menu is-active is-loading" data-panel="menu">
   <nav class="nav-menu">
     <button class="nav-menu-toggle" title="Toggle expand/collapse all"></button>
-    <h3 class="title"><a href="copilot-cloud-index.html">Aviatrix demo doc</a></h3>
+    <h3 class="title"><a href="firewall-ingress-index.html">Aviatrix demo doc with new TOC</a></h3>
 <ul class="nav-list">
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
@@ -118,7 +118,7 @@
 </div>
 <div class="nav-panel-explore" data-panel="explore">
   <div class="context">
-    <span class="title">Aviatrix demo doc</span>
+    <span class="title">Aviatrix demo doc with new TOC</span>
     <span class="version">v1.2</span>
   </div>
   <ul class="components">
@@ -142,10 +142,10 @@
       </ul>
     </li>
     <li class="component is-current">
-      <a class="title" href="copilot-cloud-index.html">Aviatrix demo doc</a>
+      <a class="title" href="firewall-ingress-index.html">Aviatrix demo doc with new TOC</a>
       <ul class="versions">
         <li class="version is-current is-latest">
-          <a href="copilot-cloud-index.html">v1.2</a>
+          <a href="firewall-ingress-index.html">v1.2</a>
         </li>
       </ul>
     </li>
@@ -174,7 +174,7 @@
   <a href="../../index/v3.0/index.html" class="home-link" title="Home"></a>
 <nav class="breadcrumbs" aria-label="breadcrumbs">
   <ul>
-    <li><a href="copilot-cloud-index.html">Aviatrix demo doc</a></li>
+    <li><a href="firewall-ingress-index.html">Aviatrix demo doc with new TOC</a></li>
     <li><a href="firewall-ingress-index.html">Ingress Firewall Setup Solution</a></li>
     <li><a href="firewall-application-SpokeVnet.html">firewall-application-SpokeVnet.adoc</a></li>
   </ul>
@@ -185,8 +185,9 @@
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<div class="sect2">
-<h3 id="deploying-application-spoke-vnet"><a class="anchor" href="#deploying-application-spoke-vnet"></a>Deploying Application Spoke VNet</h3>
+<div class="sect1">
+<h2 id="deploying-application-spoke-vnet"><a class="anchor" href="#deploying-application-spoke-vnet"></a>Deploying Application Spoke VNet</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>Deploying an Application Spoke VNET <sup>^</sup><sup>^</sup><sup>^</sup><sup>^</sup><sup>^</sup><sup>^</sup><sup>^</sup><sup>^</sup><sup>^</sup><sup>^</sup><sup>^</sup></p>
 </div>
@@ -203,9 +204,10 @@ Deploying an Ingress Spoke VNET <sup>^</sup><sup>^</sup><sup>^</sup><sup>^</sup>
 previous step or manually deploying it in Azure portal. Moreover, feel
 free to use your existing VNet.</p>
 </div>
-<div class="sect3">
-<h4 id="preparation"><a class="anchor" href="#preparation"></a>Preparation</h4>
+<div class="sect2">
+<h3 id="preparation"><a class="anchor" href="#preparation"></a>Preparation</h3>
 
+</div>
 </div>
 </div>
 <div class="sect1">
@@ -383,16 +385,20 @@ instance LAN interface.</p>
 <p>Go to Network &gt; Network Profiles &gt; Interface Mgmt and create profile to
 allow ping.</p>
 </div>
-<div class="paragraph">
-<p><span class="image unresolved"><img src="firewall_network_workflow_media/pan_network_profile.png" alt="pan_network_profile"></span></p>
+<div class="imageblock unresolved">
+<div class="content">
+<img src="firewall_network_workflow_media/pan_network_profile.png" alt="pan_network_profile">
+</div>
 </div>
 <div class="paragraph">
 <p>Next, Go to Network &gt; Interfaces, select <strong>Ethernet 1/2</strong>, go to the
 Advanced tab &gt; Management Profile and select the profile just created in
 the step above.</p>
 </div>
-<div class="paragraph">
-<p><span class="image unresolved"><img src="firewall_network_workflow_media/pan_lan_attach.png" alt="pan_lan_attach"></span></p>
+<div class="imageblock unresolved">
+<div class="content">
+<img src="firewall_network_workflow_media/pan_lan_attach.png" alt="pan_lan_attach">
+</div>
 </div>
 <div class="paragraph">
 <p>Commit changes</p>
@@ -410,11 +416,15 @@ the step above.</p>
 <p>Go to SmartConsole &gt; Global Properties &gt; Firewall &gt; Accept ICMP
 requests.</p>
 </div>
-<div class="paragraph">
-<p><span class="image unresolved"><img src="firewall_network_workflow_media/cp_ping_enable_1.png" alt="cp_ping_enable_1"></span></p>
+<div class="imageblock unresolved">
+<div class="content">
+<img src="firewall_network_workflow_media/cp_ping_enable_1.png" alt="cp_ping_enable_1">
 </div>
-<div class="paragraph">
-<p><span class="image unresolved"><img src="firewall_network_workflow_media/cp_ping_enable_2.png" alt="cp_ping_enable_2"></span></p>
+</div>
+<div class="imageblock unresolved">
+<div class="content">
+<img src="firewall_network_workflow_media/cp_ping_enable_2.png" alt="cp_ping_enable_2">
+</div>
 </div>
 <div class="paragraph">
 <p><strong>Fortigate (Fortinet)</strong> <sub>~</sub><sub>~</sub><sub>~</sub><sub>~</sub><sub>~</sub><sub>~</sub><sub>~</sub><sub>~</sub>~~`</p>
@@ -422,8 +432,10 @@ requests.</p>
 <div class="paragraph">
 <p>Go to Network &gt; Interfaces &gt; Edit Interface &gt; Mark the <strong>Ping</strong> checkbox.</p>
 </div>
-<div class="paragraph">
-<p><span class="image unresolved"><img src="firewall_network_workflow_media/fortigate_example_ping.png" alt="fortigate_example_ping"></span></p>
+<div class="imageblock unresolved">
+<div class="content">
+<img src="firewall_network_workflow_media/fortigate_example_ping.png" alt="fortigate_example_ping">
+</div>
 </div>
 </div>
 </div>
@@ -433,16 +445,20 @@ requests.</p>
 <p>Go to Firewall Network &gt; Advanced &gt; Click the 3 vertical dots as shown
 below:</p>
 </div>
-<div class="paragraph">
-<p><span class="image unresolved"><img src="firewall_network_workflow_media/firewall_advanced_lan_1.png" alt="firewall_advanced_lan_1"></span></p>
+<div class="imageblock unresolved">
+<div class="content">
+<img src="firewall_network_workflow_media/firewall_advanced_lan_1.png" alt="firewall_advanced_lan_1">
+</div>
 </div>
 <div class="paragraph">
 <p>The expanded view shows the firewall deployed by the Aviatrix Controller
 and towards the end of screen shot, one can enable/disable LAN side
 Health Check.</p>
 </div>
-<div class="paragraph">
-<p><span class="image unresolved"><img src="firewall_network_workflow_media/firewall_advanced_lan_ping.png" alt="firewall_advanced_lan_ping"></span></p>
+<div class="imageblock unresolved">
+<div class="content">
+<img src="firewall_network_workflow_media/firewall_advanced_lan_ping.png" alt="firewall_advanced_lan_ping">
+</div>
 </div>
 </div>
 <div class="sect3">
@@ -451,8 +467,10 @@ Health Check.</p>
 <p>In this example, AWS and Check Point used to demonstrate the
 functionality as shown below:</p>
 </div>
-<div class="paragraph">
-<p><span class="image unresolved"><img src="firewall_network_workflow_media/example_topology_lan_ping.png" alt="example_topology_lan_ping"></span></p>
+<div class="imageblock unresolved">
+<div class="content">
+<img src="firewall_network_workflow_media/example_topology_lan_ping.png" alt="example_topology_lan_ping">
+</div>
 </div>
 <div class="paragraph">
 <p>Go to Check Point logs and Monitoring section, notice that the ICMP
@@ -460,10 +478,15 @@ health check is initiated every 5 seconds from the Aviatrix Transit
 FireNet Gateways. The 5 second setting is the default and cannot be
 changed.</p>
 </div>
-<div class="paragraph">
-<p><span class="image unresolved"><img src="firewall_network_workflow_media/cp_icmp_lan_example.png" alt="cp_icmp_lan_example"></span>
-=== How is Firewall Network different from Transit DMZ?</p>
+<div class="imageblock unresolved">
+<div class="content">
+<img src="firewall_network_workflow_media/cp_icmp_lan_example.png" alt="cp_icmp_lan_example">
 </div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="how-is-firewall-network-different-from-transit-dmz"><a class="anchor" href="#how-is-firewall-network-different-from-transit-dmz"></a>How is Firewall Network different from Transit DMZ?</h3>
 <div class="paragraph">
 <p>Firewall Network is the new iteration from Transit DMZ. FireNet
 decouples the firewall deployment from the path between on-prem and
@@ -492,7 +515,6 @@ functions and more scale out capabilities.
 you enable Egress on the FireNet.</p>
 </li>
 </ul>
-</div>
 </div>
 </div>
 </div>
